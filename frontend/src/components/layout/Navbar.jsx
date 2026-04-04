@@ -1,3 +1,5 @@
+import BrandLogo from "../common/BrandLogo";
+
 function Navbar() {
   return (
     <header style={{ padding: "1.25rem 0" }}>
@@ -10,22 +12,8 @@ function Navbar() {
           padding: "1rem 1.5rem",
         }}
       >
-        {/* Brand */}
-        <div
-          style={{
-            fontSize: "1.2rem",
-            fontWeight: "700",
-            letterSpacing: "0.12rem",
-            textTransform: "uppercase",
-            color: "var(--color-accent)",
-            whiteSpace: "nowrap",
-            fontFamily: "inherit", // ← this keeps whatever font you already had
-          }}
-        >
-          Palaemon Clinical Services
-        </div>
+        <BrandLogo size={38} />
 
-        {/* Navigation */}
         <nav
           style={{
             display: "flex",

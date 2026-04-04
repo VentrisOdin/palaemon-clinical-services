@@ -1,4 +1,4 @@
-import logo from "../../assets/branding/palaemon-icon.png";
+import logo from "../../assets/branding/palaemon-icon.svg";
 
 function BrandLogo({ size = 40 }) {
   return (
@@ -10,13 +10,20 @@ function BrandLogo({ size = 40 }) {
         whiteSpace: "nowrap",
       }}
     >
-      <img
-        src={logo}
-        alt="Palaemon Clinical Services logo"
+      <div
         style={{
+          width: `${size}px`,
           height: `${size}px`,
-          width: "auto",
-          display: "block",
+          backgroundColor: "var(--color-accent)",
+          maskImage: `url(${logo})`,
+          maskRepeat: "no-repeat",
+          maskPosition: "center",
+          maskSize: "contain",
+          WebkitMaskImage: `url(${logo})`,
+          WebkitMaskRepeat: "no-repeat",
+          WebkitMaskPosition: "center",
+          WebkitMaskSize: "contain",
+          flexShrink: 0,
         }}
       />
 
