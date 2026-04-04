@@ -1,4 +1,4 @@
-import logo from "../../assets/branding/palaemon-icon.svg";
+import BrandLogo from "../common/BrandLogo";
 
 function SplashScreen() {
   return (
@@ -43,18 +43,9 @@ function SplashScreen() {
             }}
           />
 
-          <img
-            src={logo}
-            alt="Palaemon Clinical Services logo"
-            style={{
-              width: "280px",
-              height: "280px",
-              objectFit: "contain",
-              display: "block",
-              position: "relative",
-              zIndex: 1,
-            }}
-          />
+          <div style={{ position: "relative", zIndex: 1 }}>
+            <BrandLogo size={260} showText={false} />
+          </div>
         </div>
 
         <div
