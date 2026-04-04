@@ -1,8 +1,9 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useEffect, useState } from "react";
 import MainLayout from "./layouts/MainLayout";
-import Hero from "./components/home/Hero";
-import WhyChoose from "./components/home/WhyChoose";
 import SplashScreen from "./components/layout/SplashScreen";
+import Home from "./pages/Home";
+import EarCare from "./pages/EarCare";
 
 function App() {
   const [showSplash, setShowSplash] = useState(true);
@@ -20,10 +21,14 @@ function App() {
   }
 
   return (
-    <MainLayout>
-      <Hero />
-      <WhyChoose />
-    </MainLayout>
+    <Router>
+      <MainLayout>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/ear-care" element={<EarCare />} />
+        </Routes>
+      </MainLayout>
+    </Router>
   );
 }
 

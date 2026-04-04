@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import BrandLogo from "../common/BrandLogo";
 
 function Navbar() {
@@ -12,7 +13,9 @@ function Navbar() {
           padding: "1rem 1.5rem",
         }}
       >
-        <BrandLogo size={38} />
+        <Link to="/" style={{ display: "flex", alignItems: "center" }}>
+          <BrandLogo size={38} />
+        </Link>
 
         <nav
           style={{
@@ -22,8 +25,8 @@ function Navbar() {
             color: "var(--color-text-secondary)",
           }}
         >
-          <a href="#">Home</a>
-          <a href="#">Ear Care</a>
+          <Link to="/">Home</Link>
+          <Link to="/ear-care">Ear Care</Link>
           <a href="#">Pricing</a>
           <a href="#">FAQs</a>
 
