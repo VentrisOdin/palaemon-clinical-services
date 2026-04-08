@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Hero() {
   return (
     <section className="section">
@@ -44,7 +46,7 @@ function Hero() {
             }}
           >
             Delivered by an HCPC registered paramedic, bringing safe and
-            effective microsuction directly to your home.  Providing health care 
+            effective microsuction directly to your home. Providing health care
             professional service without the stress of travel or waiting rooms.
           </p>
 
@@ -56,31 +58,35 @@ function Hero() {
               paddingTop: "0.25rem",
             }}
           >
-            <a
-              href="#"
+            <Link
+              to="/booking"
               style={{
                 padding: "0.8rem 1.6rem",
                 borderRadius: "var(--radius-md)",
                 background: "var(--color-accent)",
                 color: "#000",
                 fontWeight: "600",
+                textDecoration: "none",
+                display: "inline-block",
               }}
             >
               Book Appointment
-            </a>
+            </Link>
 
-            <a
-              href="#"
+            <Link
+              to="/ear-care"
               style={{
                 padding: "0.8rem 1.6rem",
                 borderRadius: "var(--radius-md)",
                 border: "1px solid var(--color-border)",
                 color: "var(--color-text-primary)",
                 fontWeight: "500",
+                textDecoration: "none",
+                display: "inline-block",
               }}
             >
               Learn More
-            </a>
+            </Link>
           </div>
 
           <div

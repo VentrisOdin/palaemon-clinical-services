@@ -63,7 +63,7 @@ function WhyChoose() {
               }}
             >
               Palaemon Ear Care is a paramedic led service ensuring calm,
-              professional, reassuring, and convenient service from the first click
+              professional, reassuring and convenient service from the first click
               onwards. The aim is not simply treatment, but safe, effective care
               delivered with clinical confidence and a reassuring patient
               experience.

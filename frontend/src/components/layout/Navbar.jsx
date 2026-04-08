@@ -25,13 +25,27 @@ function Navbar() {
             color: "var(--color-text-secondary)",
           }}
         >
-          <Link to="/">Home</Link>
-          <Link to="/ear-care">Ear Care</Link>
-          <a href="#">Pricing</a>
-          <a href="#">FAQs</a>
+          <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
+            Home
+          </Link>
 
-          <a
-            href="#"
+          <Link
+            to="/ear-care"
+            style={{ textDecoration: "none", color: "inherit" }}
+          >
+            Ear Care
+          </Link>
+
+          <a href="#" style={{ textDecoration: "none", color: "inherit" }}>
+            Pricing
+          </a>
+
+          <a href="#" style={{ textDecoration: "none", color: "inherit" }}>
+            FAQs
+          </a>
+
+          <Link
+            to="/booking"
             style={{
               padding: "0.5rem 1rem",
               borderRadius: "var(--radius-sm)",
@@ -39,10 +53,14 @@ function Navbar() {
               color: "#000",
               fontWeight: "500",
               transition: "var(--transition-fast)",
+              textDecoration: "none",
+              display: "inline-flex",
+              alignItems: "center",
+              justifyContent: "center",
             }}
           >
             Book Now
-          </a>
+          </Link>
         </nav>
       </div>
     </header>

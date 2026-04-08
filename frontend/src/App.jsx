@@ -4,6 +4,7 @@ import MainLayout from "./layouts/MainLayout";
 import SplashScreen from "./components/layout/SplashScreen";
 import Home from "./pages/Home";
 import EarCare from "./pages/EarCare";
+import BookingPage from "./pages/BookingPage";
 
 function App() {
   const [showSplash, setShowSplash] = useState(true);
@@ -26,6 +27,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/ear-care" element={<EarCare />} />
+          <Route path="/booking" element={<BookingPage />} />
         </Routes>
       </MainLayout>
     </Router>
