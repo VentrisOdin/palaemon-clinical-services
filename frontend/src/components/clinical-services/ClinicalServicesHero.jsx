@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 function HomeHero() {
   return (
     <section className="section">
@@ -34,7 +32,7 @@ function HomeHero() {
               maxWidth: "920px",
             }}
           >
-            Professional ear wax removal at home, delivered by an HCPC registered paramedic
+            Paramedic-led clinical services, delivered with professionalism and care
           </h1>
 
           <p
@@ -45,9 +43,11 @@ function HomeHero() {
               maxWidth: "780px",
             }}
           >
-            Safe, effective microsuction carried out in the comfort of your own
-            home. No travel, no waiting rooms, and no unnecessary stress — just
-            professional care delivered with a calm, clinical approach.
+            Palaemon Clinical Services is a paramedic-led service designed to
+            bring professional, reassuring care into more accessible settings.
+            Beginning with home-based ear care, the service is being built to
+            expand into a wider range of clinical assessments and health-focused
+            appointments.
           </p>
 
           <div
@@ -58,39 +58,31 @@ function HomeHero() {
               paddingTop: "0.25rem",
             }}
           >
-            <Link
-              to="/ear-care"
+            <a
+              href="/ear-care"
               style={{
-                padding: "0.85rem 1.7rem",
+                padding: "0.8rem 1.6rem",
                 borderRadius: "var(--radius-md)",
                 background: "var(--color-accent)",
                 color: "#000",
                 fontWeight: "600",
-                textDecoration: "none",
-                display: "inline-flex",
-                alignItems: "center",
-                justifyContent: "center",
               }}
             >
-              Book Appointment
-            </Link>
+              Explore Ear Care
+            </a>
 
-            <Link
-              to="/ear-care"
+            <a
+              href="#services"
               style={{
-                padding: "0.85rem 1.7rem",
+                padding: "0.8rem 1.6rem",
                 borderRadius: "var(--radius-md)",
                 border: "1px solid var(--color-border)",
                 color: "var(--color-text-primary)",
                 fontWeight: "500",
-                textDecoration: "none",
-                display: "inline-flex",
-                alignItems: "center",
-                justifyContent: "center",
               }}
             >
-              Learn More
-            </Link>
+              View Services
+            </a>
           </div>
 
           <div
@@ -105,9 +97,9 @@ function HomeHero() {
             }}
           >
             <span>✓ HCPC registered paramedic</span>
-            <span>✓ Home visits</span>
-            <span>✓ Safe microsuction</span>
-            <span>✓ Transparent pricing</span>
+            <span>✓ Home visit service</span>
+            <span>✓ Professional clinical approach</span>
+            <span>✓ Expanding service range</span>
           </div>
         </div>
       </div>

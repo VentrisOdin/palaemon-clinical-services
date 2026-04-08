@@ -1,13 +1,13 @@
 import HomeHero from "../components/home/HomeHero";
+import HomeTrustStrip from "../components/home/HomeTrustStrip";
 import HomeIntro from "../components/home/HomeIntro";
-import ServicesOverview from "../components/home/ServicesOverview";
 
 function Home() {
   return (
     <>
       <HomeHero />
+      <HomeTrustStrip />
       <HomeIntro />
-      <ServicesOverview />
     </>
   );
 }

@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 function HomeIntro() {
   return (
     <section className="section">
@@ -26,7 +24,7 @@ function HomeIntro() {
                 marginBottom: "0.9rem",
               }}
             >
-              About Palaemon
+              What is Palaemon Clinical Services
             </p>
 
             <h2
@@ -38,7 +36,7 @@ function HomeIntro() {
                 maxWidth: "760px",
               }}
             >
-              A paramedic-led service built to deliver care more accessibly
+              A clinical service built on frontline experience
             </h2>
 
             <p
@@ -47,26 +45,15 @@ function HomeIntro() {
                 lineHeight: "1.75",
                 color: "var(--color-text-secondary)",
                 maxWidth: "780px",
-                marginBottom: "1rem",
               }}
             >
-              Palaemon Clinical Services is built on frontline experience,
-              combining professional standards, patient reassurance, and
-              accessible care. Ear Care is the first active service, with wider
-              clinical assessments and health-focused appointments planned as
-              the service grows.
+              Palaemon Clinical Services is being developed to provide
+              professional, accessible care outside traditional clinical
+              environments. Built on paramedic experience and a strong
+              patient-first approach, the business begins with ear care and is
+              designed to grow into a broader range of health-focused
+              assessments and mobile clinical services.
             </p>
-
-            <Link
-              to="/clinical-services"
-              style={{
-                color: "var(--color-accent)",
-                textDecoration: "none",
-                fontWeight: "600",
-              }}
-            >
-              Learn more about Palaemon Clinical Services
-            </Link>
           </div>
         </div>
       </div>

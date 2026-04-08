@@ -36,6 +36,13 @@ function Navbar() {
             Ear Care
           </Link>
 
+          <Link
+            to="/clinical-services"
+            style={{ textDecoration: "none", color: "inherit" }}
+          >
+            Clinical Services
+          </Link>
+
           <a href="#" style={{ textDecoration: "none", color: "inherit" }}>
             Pricing
           </a>
@@ -45,7 +52,7 @@ function Navbar() {
           </a>
 
           <Link
-            to="/booking"
+            to="/ear-care"
             style={{
               padding: "0.5rem 1rem",
               borderRadius: "var(--radius-sm)",
