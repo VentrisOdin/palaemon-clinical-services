@@ -51,8 +51,9 @@ function Navbar() {
             FAQs
           </a>
 
+          {/* 🔥 Updated button */}
           <Link
-            to="/ear-care"
+            to="/booking"
             style={{
               padding: "0.5rem 1rem",
               borderRadius: "var(--radius-sm)",

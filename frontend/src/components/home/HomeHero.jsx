@@ -2,112 +2,79 @@ import { Link } from "react-router-dom";
 
 function HomeHero() {
   return (
-    <section className="section">
+    <section className="home-hero-section">
       <div className="container">
-        <div
-          className="glass-card"
-          style={{
-            padding: "3.5rem 2.25rem",
-            display: "flex",
-            flexDirection: "column",
-            gap: "1.5rem",
-            animation: "riseUp 0.8s ease",
-          }}
-        >
-          <p
-            style={{
-              textTransform: "uppercase",
-              letterSpacing: "0.18rem",
-              color: "var(--color-accent)",
-              fontSize: "0.95rem",
-              fontWeight: "600",
-            }}
-          >
-            Palaemon Clinical Services
-          </p>
+        <div className="home-grid" style={{ animation: "riseUp 0.8s ease" }}>
+          <div className="home-left-column">
+            <p className="home-eyebrow">Paramedic-led ear care</p>
 
-          <h1
-            style={{
-              fontSize: "2.7rem",
-              lineHeight: "1.15",
-              fontWeight: "700",
-              maxWidth: "920px",
-            }}
-          >
-            Professional ear wax removal at home, delivered by an HCPC registered paramedic
-          </h1>
+            <div className="home-hero-heading-wrap">
+              <h1 className="home-hero-title">Professional ear care at home</h1>
+              <h2 className="home-hero-subtitle">
+                Delivered by an HCPC registered paramedic
+              </h2>
+            </div>
 
-          <p
-            style={{
-              fontSize: "1.1rem",
-              lineHeight: "1.75",
-              color: "var(--color-text-secondary)",
-              maxWidth: "780px",
-            }}
-          >
-            Safe, effective microsuction carried out in the comfort of your own
-            home. No travel, no waiting rooms, and no unnecessary stress — just
-            professional care delivered with a calm, clinical approach.
-          </p>
+            <p className="home-copy">
+              Safe, professional home-based ear care delivered with a calm,
+              clinical approach. Ear Care is the first active service under
+              Palaemon Clinical Services, with further health-focused services
+              planned as the business grows.
+            </p>
 
-          <div
-            style={{
-              display: "flex",
-              gap: "1rem",
-              flexWrap: "wrap",
-              paddingTop: "0.25rem",
-            }}
-          >
-            <Link
-              to="/ear-care"
-              style={{
-                padding: "0.85rem 1.7rem",
-                borderRadius: "var(--radius-md)",
-                background: "var(--color-accent)",
-                color: "#000",
-                fontWeight: "600",
-                textDecoration: "none",
-                display: "inline-flex",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-            >
-              Book Appointment
-            </Link>
+            <div className="home-button-row">
+              <Link to="/ear-care" className="home-primary-button">
+                Explore Ear Care
+              </Link>
 
-            <Link
-              to="/ear-care"
-              style={{
-                padding: "0.85rem 1.7rem",
-                borderRadius: "var(--radius-md)",
-                border: "1px solid var(--color-border)",
-                color: "var(--color-text-primary)",
-                fontWeight: "500",
-                textDecoration: "none",
-                display: "inline-flex",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-            >
-              Learn More
-            </Link>
+              <Link to="/clinical-services" className="home-secondary-button">
+                Clinical Services
+              </Link>
+            </div>
+
+            <div className="home-pill-row">
+              {[
+                "HCPC registered paramedic",
+                "Home visits",
+                "Ear care available now",
+                "Professional clinical approach",
+              ].map((item) => (
+                <span key={item} className="home-pill">
+                  {item}
+                </span>
+              ))}
+            </div>
           </div>
 
-          <div
-            style={{
-              display: "flex",
-              gap: "1.25rem",
-              flexWrap: "wrap",
-              marginTop: "0.5rem",
-              color: "var(--color-text-muted)",
-              fontSize: "0.98rem",
-              lineHeight: "1.6",
-            }}
-          >
-            <span>✓ HCPC registered paramedic</span>
-            <span>✓ Home visits</span>
-            <span>✓ Safe microsuction</span>
-            <span>✓ Transparent pricing</span>
+          <div className="glass-card home-panel">
+            <div className="home-panel-glow" />
+
+            <div className="home-panel-stack">
+              <div className="home-panel-card">
+                <p className="home-panel-label">Available now</p>
+                <h3 className="home-panel-title">
+                  Home-based ear care and microsuction
+                </h3>
+              </div>
+
+              <div className="home-panel-card">
+                <p className="home-panel-label">Led by</p>
+                <h3 className="home-panel-title">HCPC registered paramedic</h3>
+              </div>
+
+              <div className="home-panel-card">
+                <p className="home-panel-label">Developing into</p>
+                <h3 className="home-panel-title">
+                  Wider clinical services and health assessments
+                </h3>
+              </div>
+            </div>
+
+            <div className="home-panel-footer">
+              Palaemon Clinical Services is designed to deliver professional,
+              accessible care in more convenient settings, starting with Ear
+              Care and expanding into a broader range of clinical services.
+            </div>
           </div>
         </div>
       </div>
