@@ -1,18 +1,18 @@
 function HomeWhyChoose() {
   const items = [
-    {
-      title: "HCPC registered paramedic",
-      text: "Ear care delivered by a registered paramedic, bringing clinical judgement, patient safety awareness, and a professional standard that sets Palaemon apart from non-clinical providers.",
-    },
-    {
-      title: "Home visit convenience",
-      text: "Appointments take place in the comfort of your own home, avoiding travel, waiting rooms, and unnecessary disruption to your day.",
-    },
-    {
-      title: "Calm, professional approach",
-      text: "A straightforward, reassuring service with clear communication, transparent pricing, and a strong focus on patient experience.",
-    },
-  ];
+  {
+    title: "HCPC registered paramedic",
+    text: "Treatment delivered by a registered paramedic, providing safe, clinically informed care you can trust.",
+  },
+  {
+    title: "Home visit appointments",
+    text: "No travel, no waiting rooms — appointments take place in your own home at a time that suits you.",
+  },
+  {
+    title: "Safe, effective treatment",
+    text: "Microsuction is a safe and reliable method of ear wax removal, carried out with a calm and professional approach.",
+  },
+];
 
   return (
     <section

@@ -5,39 +5,45 @@ function HomeHero() {
     <section className="home-hero-section">
       <div className="container">
         <div className="home-grid" style={{ animation: "riseUp 0.8s ease" }}>
+          
+          {/* LEFT */}
           <div className="home-left-column">
-            <p className="home-eyebrow">Paramedic-led ear care</p>
+            <p className="home-eyebrow">
+              Home visit ear wax removal
+            </p>
 
             <div className="home-hero-heading-wrap">
-              <h1 className="home-hero-title">Professional ear care at home</h1>
+              <h1 className="home-hero-title">
+                Ear wax removal at home using microsuction
+              </h1>
+
               <h2 className="home-hero-subtitle">
                 Delivered by an HCPC registered paramedic
               </h2>
             </div>
 
             <p className="home-copy">
-              Safe, professional home-based ear care delivered with a calm,
-              clinical approach. Ear Care is the first active service under
-              Palaemon Clinical Services, with further health-focused services
-              planned as the business grows.
+              Safe, effective treatment carried out in the comfort of your own
+              home. No travel, no waiting rooms — just professional care
+              delivered with a calm, clinical approach.
             </p>
 
             <div className="home-button-row">
-              <Link to="/ear-care" className="home-primary-button">
-                Explore Ear Care
+              <Link to="/booking" className="home-primary-button">
+                Book Appointment
               </Link>
 
-              <Link to="/clinical-services" className="home-secondary-button">
-                Clinical Services
+              <Link to="/ear-care" className="home-secondary-button">
+                Learn More
               </Link>
             </div>
 
             <div className="home-pill-row">
               {[
                 "HCPC registered paramedic",
-                "Home visits",
-                "Ear care available now",
-                "Professional clinical approach",
+                "Home visit appointments",
+                "Microsuction treatment",
+                "Clear pricing",
               ].map((item) => (
                 <span key={item} className="home-pill">
                   {item}
@@ -46,6 +52,7 @@ function HomeHero() {
             </div>
           </div>
 
+          {/* RIGHT PANEL */}
           <div className="glass-card home-panel">
             <div className="home-panel-glow" />
 
@@ -53,27 +60,29 @@ function HomeHero() {
               <div className="home-panel-card">
                 <p className="home-panel-label">Available now</p>
                 <h3 className="home-panel-title">
-                  Home-based ear care and microsuction
+                  Home-based ear wax removal
                 </h3>
               </div>
 
               <div className="home-panel-card">
-                <p className="home-panel-label">Led by</p>
-                <h3 className="home-panel-title">HCPC registered paramedic</h3>
+                <p className="home-panel-label">Delivered by</p>
+                <h3 className="home-panel-title">
+                  HCPC registered paramedic
+                </h3>
               </div>
 
               <div className="home-panel-card">
-                <p className="home-panel-label">Developing into</p>
+                <p className="home-panel-label">Future services</p>
                 <h3 className="home-panel-title">
-                  Wider clinical services and health assessments
+                  Health checks and clinical assessments
                 </h3>
               </div>
             </div>
 
             <div className="home-panel-footer">
-              Palaemon Clinical Services is designed to deliver professional,
-              accessible care in more convenient settings, starting with Ear
-              Care and expanding into a broader range of clinical services.
+              Palaemon Clinical Services is designed to provide safe,
+              professional care in more convenient settings, starting with ear
+              care and expanding into a wider range of services.
             </div>
           </div>
         </div>
