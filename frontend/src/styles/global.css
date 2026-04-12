@@ -12,9 +12,7 @@ body,
 
 body {
   font-family: var(--font-main);
-  background:
-    radial-gradient(circle at top, rgba(76, 201, 240, 0.12), transparent 35%),
-    linear-gradient(180deg, var(--color-bg-secondary) 0%, var(--color-bg-primary) 100%);
+  background: var(--color-bg-secondary);
   color: var(--color-text-primary);
   min-height: 100vh;
 }
@@ -48,9 +46,7 @@ img {
 .glass-card {
   background: var(--color-surface);
   border: 1px solid var(--color-border);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-radius: var(--radius-lg);
+  border-radius: var(--radius-md);
   box-shadow: var(--shadow-soft);
 }
 
@@ -90,20 +86,20 @@ img {
   padding: 0.7rem 1.25rem;
   border-radius: var(--radius-md);
   background: var(--color-accent);
-  color: #000;
+  color: #ffffff;
   font-weight: 600;
   text-decoration: none;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   white-space: nowrap;
-  box-shadow: 0 6px 18px rgba(76, 201, 240, 0.28);
+  box-shadow: 0 6px 18px rgba(0, 94, 184, 0.18);
   transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.15s ease;
 }
 
 .nav-cta-button:hover {
   transform: translateY(-1px);
-  box-shadow: 0 8px 20px rgba(76, 201, 240, 0.34);
+  box-shadow: 0 8px 20px rgba(0, 94, 184, 0.24);
   opacity: 0.98;
 }
 
@@ -120,8 +116,8 @@ img {
 
 .earcare-feature-card:hover {
   transform: translateY(-4px);
-  border-color: rgba(76, 201, 240, 0.22);
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.22);
+  border-color: rgba(0, 94, 184, 0.22);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.1);
 }
 
 .earcare-hero-card {
@@ -186,8 +182,8 @@ img {
 .earcare-hero-pill {
   padding: 0.45rem 0.8rem;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid var(--color-border);
+  background: #e8f1f8;
+  border: 1px solid #c7dcef;
   color: var(--color-text-secondary);
   font-size: 0.9rem;
 }
@@ -199,7 +195,7 @@ img {
 .earcare-hero-image-glow {
   position: absolute;
   inset: 10%;
-  background: rgba(76, 201, 240, 0.08);
+  background: rgba(0, 94, 184, 0.08);
   filter: blur(35px);
   border-radius: 32px;
 }
@@ -223,8 +219,8 @@ img {
   inset: 0;
   background: linear-gradient(
     to top,
-    rgba(0, 0, 0, 0.28),
-    rgba(0, 0, 0, 0.05)
+    rgba(0, 48, 135, 0.28),
+    rgba(0, 48, 135, 0.05)
   );
 }
 
@@ -235,10 +231,8 @@ img {
   bottom: 1rem;
   padding: 0.9rem 1rem;
   border-radius: var(--radius-md);
-  background: rgba(7, 17, 31, 0.68);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(0, 94, 184, 0.14);
 }
 
 .earcare-hero-image-caption-label {
@@ -344,12 +338,13 @@ img {
 
 .home-primary-button {
   background: var(--color-accent);
-  color: #000;
+  color: #ffffff;
   font-weight: 600;
 }
 
 .home-secondary-button {
   border: 1px solid var(--color-border);
+  background: #ffffff;
   color: var(--color-text-primary);
   font-weight: 500;
 }
@@ -364,8 +359,8 @@ img {
 .home-pill {
   padding: 0.45rem 0.8rem;
   border-radius: 999px;
-  background: rgba(76, 201, 240, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: #e8f1f8;
+  border: 1px solid #c7dcef;
   color: var(--color-text-secondary);
   font-size: 0.9rem;
   line-height: 1.4;
@@ -387,7 +382,7 @@ img {
   width: 220px;
   height: 220px;
   border-radius: 999px;
-  background: rgba(76, 201, 240, 0.12);
+  background: rgba(0, 94, 184, 0.08);
   filter: blur(30px);
 }
 
@@ -401,8 +396,8 @@ img {
 .home-panel-card {
   padding: 0.95rem;
   border-radius: var(--radius-md);
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: #f8fafb;
+  border: 1px solid var(--color-border);
 }
 
 .home-panel-label {
@@ -524,7 +519,7 @@ img {
 .home-hero-image-glow {
   position: absolute;
   inset: 10%;
-  background: rgba(76, 201, 240, 0.08);
+  background: rgba(0, 94, 184, 0.08);
   filter: blur(35px);
   border-radius: 32px;
 }
@@ -548,8 +543,8 @@ img {
   inset: 0;
   background: linear-gradient(
     to top,
-    rgba(0, 0, 0, 0.28),
-    rgba(0, 0, 0, 0.05)
+    rgba(0, 48, 135, 0.28),
+    rgba(0, 48, 135, 0.05)
   );
 }
 
@@ -560,10 +555,8 @@ img {
   bottom: 1rem;
   padding: 0.9rem 1rem;
   border-radius: var(--radius-md);
-  background: rgba(7, 17, 31, 0.68);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(0, 94, 184, 0.14);
 }
 
 .home-hero-image-caption-label {
@@ -613,7 +606,7 @@ img {
 }
 
 /* ---------------------------------- */
-/* PRICING HERO IMAGE */
+/* PRICING / FAQ / CLINICAL HERO IMAGE */
 /* ---------------------------------- */
 
 .pricing-hero-grid {
@@ -630,7 +623,7 @@ img {
 .pricing-hero-image-glow {
   position: absolute;
   inset: 10%;
-  background: rgba(76, 201, 240, 0.08);
+  background: rgba(0, 94, 184, 0.08);
   filter: blur(35px);
   border-radius: 32px;
 }
@@ -654,8 +647,8 @@ img {
   inset: 0;
   background: linear-gradient(
     to top,
-    rgba(0, 0, 0, 0.25),
-    rgba(0, 0, 0, 0.05)
+    rgba(0, 48, 135, 0.22),
+    rgba(0, 48, 135, 0.04)
   );
 }
 
@@ -693,7 +686,7 @@ img {
 .microsuction-explainer-image-glow {
   position: absolute;
   inset: 12%;
-  background: rgba(76, 201, 240, 0.08);
+  background: rgba(0, 94, 184, 0.08);
   filter: blur(28px);
   border-radius: 28px;
 }
@@ -701,8 +694,10 @@ img {
 .microsuction-explainer-image-card {
   position: relative;
   padding: 1rem;
-  background: rgba(255, 255, 255, 0.04);
+  background: #f8fafb;
   text-align: center;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
 }
 
 .microsuction-explainer-image {
@@ -710,7 +705,7 @@ img {
   max-height: 340px;
   object-fit: contain;
   border-radius: 12px;
-  background: #fff;
+  background: #ffffff;
 }
 
 .microsuction-explainer-caption {
