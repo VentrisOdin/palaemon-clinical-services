@@ -33,27 +33,31 @@ function ServicesOverview() {
   ];
 
   return (
-    <section className="section" id="services">
+    <section
+      className="home-section"
+      id="services"
+      style={{
+        paddingTop: "2rem",
+        paddingBottom: "3rem",
+      }}
+    >
       <div className="container">
         <div
+          className="home-section-stack"
           style={{
-            display: "grid",
             gap: "1.75rem",
           }}
         >
           <div
+            className="home-heading-block"
             style={{
-              maxWidth: "820px",
+              maxWidth: "760px",
               animation: "riseUp 0.8s ease",
             }}
           >
             <p
+              className="home-eyebrow"
               style={{
-                textTransform: "uppercase",
-                letterSpacing: "0.18rem",
-                color: "var(--color-accent)",
-                fontSize: "0.95rem",
-                fontWeight: "600",
                 marginBottom: "0.9rem",
               }}
             >
@@ -62,11 +66,11 @@ function ServicesOverview() {
 
             <h2
               style={{
-                fontSize: "2.1rem",
+                fontSize: "1.7rem",
                 lineHeight: "1.2",
                 fontWeight: "700",
                 marginBottom: "1rem",
-                maxWidth: "760px",
+                maxWidth: "680px",
               }}
             >
               Built to start with ear care and grow beyond it
@@ -74,10 +78,10 @@ function ServicesOverview() {
 
             <p
               style={{
-                fontSize: "1.08rem",
-                lineHeight: "1.75",
+                fontSize: "1rem",
+                lineHeight: "1.7",
                 color: "var(--color-text-secondary)",
-                maxWidth: "780px",
+                maxWidth: "720px",
               }}
             >
               Ear Care is the first active service under Palaemon Clinical
@@ -87,30 +91,29 @@ function ServicesOverview() {
           </div>
 
           <div
+            className="home-card-grid"
             style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))",
-              gap: "1.25rem",
+              gap: "1.15rem",
             }}
           >
             {services.map((service) => (
               <div
                 key={service.title}
-                className="glass-card"
+                className="glass-card home-info-card"
                 style={{
-                  padding: "1.6rem",
+                  padding: "1.45rem",
                   animation: "riseUp 0.8s ease",
                 }}
               >
                 <div
                   style={{
                     display: "inline-block",
-                    marginBottom: "0.85rem",
+                    marginBottom: "0.8rem",
                     padding: "0.35rem 0.65rem",
                     borderRadius: "999px",
                     background: "rgba(76, 201, 240, 0.1)",
                     color: "var(--color-accent)",
-                    fontSize: "0.8rem",
+                    fontSize: "0.78rem",
                     fontWeight: "600",
                   }}
                 >
@@ -119,9 +122,9 @@ function ServicesOverview() {
 
                 <h3
                   style={{
-                    fontSize: "1.08rem",
+                    fontSize: "1.02rem",
                     lineHeight: "1.35",
-                    marginBottom: "0.75rem",
+                    marginBottom: "0.7rem",
                     color: "var(--color-text-primary)",
                   }}
                 >
@@ -130,9 +133,10 @@ function ServicesOverview() {
 
                 <p
                   style={{
-                    fontSize: "1rem",
+                    fontSize: "0.98rem",
                     color: "var(--color-text-secondary)",
-                    lineHeight: "1.7",
+                    lineHeight: "1.68",
+                    margin: 0,
                   }}
                 >
                   {service.text}

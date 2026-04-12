@@ -1,16 +1,23 @@
 import { Link } from "react-router-dom";
+import homePageImage from "../../assets/images/HomePagePicture.jpeg";
 
 function HomeHero() {
   return (
-    <section className="home-hero-section">
+    <section
+      className="home-hero-section"
+      style={{
+        paddingTop: "3rem",
+      }}
+    >
       <div className="container">
-        <div className="home-grid" style={{ animation: "riseUp 0.8s ease" }}>
-          
-          {/* LEFT */}
+        <div
+          className="home-grid"
+          style={{
+            animation: "riseUp 0.8s ease",
+          }}
+        >
           <div className="home-left-column">
-            <p className="home-eyebrow">
-              Home visit ear wax removal
-            </p>
+            <p className="home-eyebrow">Home visit ear wax removal</p>
 
             <div className="home-hero-heading-wrap">
               <h1 className="home-hero-title">
@@ -52,37 +59,26 @@ function HomeHero() {
             </div>
           </div>
 
-          {/* RIGHT PANEL */}
-          <div className="glass-card home-panel">
-            <div className="home-panel-glow" />
+          <div className="home-hero-image-wrap">
+            <div className="home-hero-image-glow" />
 
-            <div className="home-panel-stack">
-              <div className="home-panel-card">
-                <p className="home-panel-label">Available now</p>
-                <h3 className="home-panel-title">
-                  Home-based ear wax removal
-                </h3>
+            <div className="glass-card home-hero-image-card">
+              <img
+                src={homePageImage}
+                alt="Clinician carrying out a home visit consultation"
+                className="home-hero-image"
+              />
+
+              <div className="home-hero-image-overlay" />
+
+              <div className="home-hero-image-caption">
+                <p className="home-hero-image-caption-label">Home visit care</p>
+
+                <p className="home-hero-image-caption-copy">
+                  Professional ear care delivered with a calm, clinically led
+                  approach in the comfort of your own home.
+                </p>
               </div>
-
-              <div className="home-panel-card">
-                <p className="home-panel-label">Delivered by</p>
-                <h3 className="home-panel-title">
-                  HCPC registered paramedic
-                </h3>
-              </div>
-
-              <div className="home-panel-card">
-                <p className="home-panel-label">Future services</p>
-                <h3 className="home-panel-title">
-                  Health checks and clinical assessments
-                </h3>
-              </div>
-            </div>
-
-            <div className="home-panel-footer">
-              Palaemon Clinical Services is designed to provide safe,
-              professional care in more convenient settings, starting with ear
-              care and expanding into a wider range of services.
             </div>
           </div>
         </div>

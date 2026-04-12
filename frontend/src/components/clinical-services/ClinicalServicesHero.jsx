@@ -1,105 +1,40 @@
-function HomeHero() {
+import clinicalImage from "../../assets/images/ClinicalServices.jpeg";
+
+function ClinicalServicesHero() {
   return (
-    <section className="section">
+    <section className="home-hero-section">
       <div className="container">
-        <div
-          className="glass-card"
-          style={{
-            padding: "3.5rem 2.25rem",
-            display: "flex",
-            flexDirection: "column",
-            gap: "1.5rem",
-            animation: "riseUp 0.8s ease",
-          }}
-        >
-          <p
-            style={{
-              textTransform: "uppercase",
-              letterSpacing: "0.18rem",
-              color: "var(--color-accent)",
-              fontSize: "0.95rem",
-              fontWeight: "600",
-            }}
-          >
-            Palaemon Clinical Services
-          </p>
+        <div className="glass-card pricing-hero-card">
+          <div className="pricing-hero-grid">
+            {/* LEFT */}
+            <div>
+              <p className="home-eyebrow">Clinical Services</p>
 
-          <h1
-            style={{
-              fontSize: "2.7rem",
-              lineHeight: "1.15",
-              fontWeight: "700",
-              maxWidth: "920px",
-            }}
-          >
-            Paramedic-led clinical services, delivered with professionalism and care
-          </h1>
+              <h1 className="pricing-hero-title">
+                A growing range of paramedic-led clinical services
+              </h1>
 
-          <p
-            style={{
-              fontSize: "1.1rem",
-              lineHeight: "1.75",
-              color: "var(--color-text-secondary)",
-              maxWidth: "780px",
-            }}
-          >
-            Palaemon Clinical Services is a paramedic-led service designed to
-            bring professional, reassuring care into more accessible settings.
-            Beginning with home-based ear care, the service is being built to
-            expand into a wider range of clinical assessments and health-focused
-            appointments.
-          </p>
+              <p className="home-copy pricing-hero-copy">
+                Palaemon Clinical Services is being developed to expand beyond
+                ear care, offering a range of structured assessments including
+                cardiovascular, respiratory, and neurological screening.
+              </p>
+            </div>
 
-          <div
-            style={{
-              display: "flex",
-              gap: "1rem",
-              flexWrap: "wrap",
-              paddingTop: "0.25rem",
-            }}
-          >
-            <a
-              href="/ear-care"
-              style={{
-                padding: "0.8rem 1.6rem",
-                borderRadius: "var(--radius-md)",
-                background: "var(--color-accent)",
-                color: "#000",
-                fontWeight: "600",
-              }}
-            >
-              Explore Ear Care
-            </a>
+            {/* RIGHT IMAGE */}
+            <div className="pricing-hero-image-wrap">
+              <div className="pricing-hero-image-glow" />
 
-            <a
-              href="#services"
-              style={{
-                padding: "0.8rem 1.6rem",
-                borderRadius: "var(--radius-md)",
-                border: "1px solid var(--color-border)",
-                color: "var(--color-text-primary)",
-                fontWeight: "500",
-              }}
-            >
-              View Services
-            </a>
-          </div>
+              <div className="glass-card pricing-hero-image-card">
+                <img
+                  src={clinicalImage}
+                  alt="Clinical equipment used for health assessments"
+                  className="pricing-hero-image"
+                />
 
-          <div
-            style={{
-              display: "flex",
-              gap: "1.25rem",
-              flexWrap: "wrap",
-              marginTop: "0.5rem",
-              color: "var(--color-text-muted)",
-              fontSize: "0.98rem",
-              lineHeight: "1.6",
-            }}
-          >
-            <span>✓ HCPC registered paramedic</span>
-            <span>✓ Home visit service</span>
-            <span>✓ Professional clinical approach</span>
-            <span>✓ Expanding service range</span>
+                <div className="pricing-hero-image-overlay" />
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -107,4 +42,4 @@ function HomeHero() {
   );
 }
 
-export default HomeHero;
+export default ClinicalServicesHero;

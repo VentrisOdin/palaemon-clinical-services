@@ -6,6 +6,9 @@ import Home from "./pages/Home";
 import EarCare from "./pages/EarCare";
 import ClinicalServices from "./pages/Clinical-Services";
 import BookingPage from "./pages/BookingPage";
+import Microsuction from "./pages/Microsuction";
+import PricingPage from "./pages/PricingPage";
+import FAQPage from "./pages/FAQPage";
 
 function App() {
   const [showSplash, setShowSplash] = useState(true);
@@ -30,7 +33,15 @@ function App() {
           <Route path="/ear-care" element={<EarCare />} />
           <Route path="/clinical-services" element={<ClinicalServices />} />
           <Route path="/booking" element={<BookingPage />} />
-        </Routes>
+          <Route path="/microsuction" element={<Microsuction />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/ear-care" element={<EarCare />} />
+          <Route path="/clinical-services" element={<ClinicalServices />} />
+          <Route path="/booking" element={<BookingPage />} />
+          <Route path="/microsuction" element={<Microsuction />} />
+          <Route path="/pricing" element={<PricingPage />} />
+          <Route path="/faqs" element={<FAQPage />} />
+          </Routes>
       </MainLayout>
     </Router>
   );

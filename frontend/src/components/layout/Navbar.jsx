@@ -17,59 +17,73 @@ function Navbar() {
           <BrandLogo size={38} />
         </Link>
 
-        <nav
+        <div
           style={{
             display: "flex",
-            gap: "1.5rem",
             alignItems: "center",
-            color: "var(--color-text-secondary)",
+            gap: "2rem",
           }}
         >
-          <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
-            Home
-          </Link>
-
-          <Link
-            to="/ear-care"
-            style={{ textDecoration: "none", color: "inherit" }}
+          <nav
+            style={{
+              display: "flex",
+              gap: "1.5rem",
+              alignItems: "center",
+              color: "var(--color-text-secondary)",
+            }}
           >
-            Ear Care
-          </Link>
+            <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
+              Home
+            </Link>
 
-          <Link
-            to="/clinical-services"
-            style={{ textDecoration: "none", color: "inherit" }}
-          >
-            Clinical Services
-          </Link>
+            <Link
+              to="/ear-care"
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
+              Ear Care
+            </Link>
 
-          <a href="#" style={{ textDecoration: "none", color: "inherit" }}>
-            Pricing
-          </a>
+            <Link
+              to="/clinical-services"
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
+              Clinical Services
+            </Link>
 
-          <a href="#" style={{ textDecoration: "none", color: "inherit" }}>
-            FAQs
-          </a>
+            <Link
+              to="/pricing"
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
+              Pricing
+            </Link>
 
-          {/* 🔥 Updated button */}
+            <Link
+              to="/faqs"
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
+              FAQs
+            </Link>
+          </nav>
+
           <Link
             to="/booking"
             style={{
-              padding: "0.5rem 1rem",
-              borderRadius: "var(--radius-sm)",
+              padding: "0.7rem 1.25rem",
+              borderRadius: "var(--radius-md)",
               background: "var(--color-accent)",
               color: "#000",
-              fontWeight: "500",
-              transition: "var(--transition-fast)",
+              fontWeight: "600",
               textDecoration: "none",
               display: "inline-flex",
               alignItems: "center",
               justifyContent: "center",
+              whiteSpace: "nowrap",
+              boxShadow: "0 6px 18px rgba(76, 201, 240, 0.28)",
             }}
           >
             Book Now
           </Link>
-        </nav>
+        </div>
       </div>
     </header>
   );

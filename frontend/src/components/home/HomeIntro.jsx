@@ -10,20 +10,8 @@ function HomeIntro() {
       }}
     >
       <div className="container">
-        <div
-          className="home-content-block"
-          style={{
-            maxWidth: "760px",
-          }}
-        >
-          <p
-            className="home-eyebrow"
-            style={{
-              marginBottom: "0.9rem",
-            }}
-          >
-            About Palaemon
-          </p>
+        <div className="home-content-block" style={{ maxWidth: "760px" }}>
+          <p className="home-eyebrow">About Palaemon</p>
 
           <h2
             style={{
@@ -31,10 +19,9 @@ function HomeIntro() {
               lineHeight: "1.2",
               fontWeight: "700",
               marginBottom: "1rem",
-              maxWidth: "680px",
             }}
           >
-            A paramedic-led clinical service built for accessible, professional care
+            Building a more accessible way to deliver clinical care
           </h2>
 
           <p
@@ -42,15 +29,13 @@ function HomeIntro() {
               fontSize: "1rem",
               lineHeight: "1.7",
               color: "var(--color-text-secondary)",
-              maxWidth: "720px",
               marginBottom: "0.9rem",
             }}
           >
-            Palaemon Clinical Services is built on frontline experience,
-            combining clinical professionalism, patient reassurance, and more
-            accessible care. Ear Care is the first active service, with wider
-            assessment and health-focused appointments planned as the service
-            grows.
+            Palaemon Clinical Services is designed to make professional healthcare
+            more accessible outside of traditional settings. Ear Care is the first
+            active service, with additional home-based clinical services planned as
+            the business develops.
           </p>
 
           <Link to="/clinical-services" className="home-link">

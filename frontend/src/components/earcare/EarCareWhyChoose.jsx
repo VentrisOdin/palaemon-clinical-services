@@ -14,7 +14,7 @@ function EarCareWhyChoose() {
     },
     {
       title: "Clear and professional process",
-      text: "Straightforward booking, transparent pricing, and a calm, patient-focused approach from first contact through to treatment.",
+      text: "Straightforward booking, transparent pricing, and a patient-focused approach from first contact through to treatment.",
       icon: ClipboardCheck,
     },
   ];
@@ -59,7 +59,7 @@ function EarCareWhyChoose() {
                 maxWidth: "760px",
               }}
             >
-              Professional ear care with a calm, clinical approach
+              Microsuction with a professional, clinical approach
             </h2>
 
             <p
@@ -73,7 +73,7 @@ function EarCareWhyChoose() {
             >
               Palaemon Ear Care is a paramedic-led service designed to feel
               professional, reassuring, and convenient from the first click
-              onwards — combining clinical confidence with the practicality of
+              onwards, combining clinical confidence with the practicality of
               home visits.
             </p>
           </div>

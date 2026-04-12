@@ -1,85 +1,200 @@
+import { Link } from "react-router-dom";
+import consultationImage from "../assets/images/Consultation.jpeg";
+
 function BookingPage() {
   return (
-    <section
-      style={{
-        maxWidth: "1000px",
-        margin: "0 auto",
-        padding: "60px 20px",
-        color: "var(--color-text-primary)",
-      }}
-    >
-      <h1
-        style={{
-          fontSize: "2.4rem",
-          marginBottom: "0.5rem",
-        }}
-      >
-        Book a Home Visit
-      </h1>
-
-      <p
-        style={{
-          marginBottom: "1.5rem",
-          lineHeight: "1.6",
-          color: "var(--color-text-secondary)",
-        }}
-      >
-        Professional ear wax removal in the comfort of your home.
-      </p>
-
-      {/* Trust signals */}
-      <div
-        style={{
-          display: "flex",
-          gap: "1rem",
-          flexWrap: "wrap",
-          marginBottom: "2rem",
-          fontSize: "0.95rem",
-          color: "var(--color-text-secondary)",
-        }}
-      >
-        <span>✔ Fully qualified, HCPC registered paramedic</span>
-        <span>✔ Safe microsuction technique</span>
-        <span>✔ Home visits</span>
-      </div>
-
-      <p
-        style={{
-          marginBottom: "2rem",
-          lineHeight: "1.6",
-          color: "var(--color-text-secondary)",
-        }}
-      >
-        Please complete the form below to request an appointment. This is a booking request,
-        not a confirmed appointment. We will review your details and contact you to confirm
-        suitability and availability.
-      </p>
-
-      {/* Styled container */}
-      <div
-        style={{
-          width: "100%",
-          padding: "1.5rem",
-          borderRadius: "20px",
-          background: "rgba(255, 255, 255, 0.05)",
-          backdropFilter: "blur(10px)",
-          border: "1px solid rgba(255,255,255,0.1)",
-          boxShadow: "0 20px 40px rgba(0,0,0,0.25)",
-        }}
-      >
-        <iframe
-          src="https://docs.google.com/forms/d/e/1FAIpQLScSRbsEhxitkF7RJSdCN9Z701wBMJ7cDnhDTobllrWAWgcNGw/viewform?embedded=true"
-          width="100%"
-          height="1600"
+    <section className="home-hero-section">
+      <div className="container">
+        <div
+          className="glass-card"
           style={{
-            border: "none",
-            borderRadius: "12px",
-            background: "#fff",
+            maxWidth: "1080px",
+            margin: "0 auto",
+            padding: "3rem 2.25rem",
+            animation: "riseUp 0.8s ease",
           }}
-          title="Palaemon Ear Care Booking Form"
         >
-          Loading…
-        </iframe>
+          <p className="home-eyebrow">Booking</p>
+
+          <h1
+            style={{
+              fontSize: "clamp(2.4rem, 4vw, 3.4rem)",
+              lineHeight: "1.08",
+              fontWeight: "700",
+              margin: "0 0 1rem 0",
+              maxWidth: "760px",
+            }}
+          >
+            Book a home visit
+          </h1>
+
+          <p
+            className="home-copy"
+            style={{
+              maxWidth: "760px",
+              marginBottom: "1.25rem",
+            }}
+          >
+            Request a home visit for ear wax removal using microsuction. All
+            booking requests are reviewed before confirmation to ensure
+            suitability and availability.
+          </p>
+
+          <div className="glass-card booking-image-card">
+            <img
+              src={consultationImage}
+              alt="Clinician carrying out a home visit consultation"
+              className="booking-image"
+            />
+          </div>
+
+          <div className="home-pill-row" style={{ marginBottom: "2rem" }}>
+            {[
+              "HCPC registered paramedic",
+              "Home visits",
+              "Microsuction treatment",
+              "Transparent pricing",
+            ].map((item) => (
+              <span key={item} className="home-pill">
+                {item}
+              </span>
+            ))}
+          </div>
+
+          <div
+            className="home-card-grid"
+            style={{
+              marginBottom: "1.5rem",
+            }}
+          >
+            <div
+              className="glass-card home-info-card"
+              style={{
+                padding: "1.6rem",
+              }}
+            >
+              <h2
+                style={{
+                  fontSize: "1.1rem",
+                  margin: "0 0 0.75rem 0",
+                }}
+              >
+                Ear Wax Removal (Home Visit)
+              </h2>
+
+              <div
+                style={{
+                  fontSize: "2rem",
+                  fontWeight: "700",
+                  color: "var(--color-accent)",
+                  marginBottom: "0.85rem",
+                }}
+              >
+                £80
+              </div>
+
+              <p className="home-card-copy">
+                Includes assessment and microsuction treatment where
+                appropriate. Covers both ears if required.
+              </p>
+            </div>
+
+            <div
+              className="glass-card home-info-card"
+              style={{
+                padding: "1.6rem",
+              }}
+            >
+              <h2
+                style={{
+                  fontSize: "1.1rem",
+                  margin: "0 0 0.75rem 0",
+                }}
+              >
+                Consultation Only
+              </h2>
+
+              <div
+                style={{
+                  fontSize: "2rem",
+                  fontWeight: "700",
+                  color: "var(--color-accent)",
+                  marginBottom: "0.85rem",
+                }}
+              >
+                £50
+              </div>
+
+              <p className="home-card-copy">
+                If no treatment is required following assessment. If treatment
+                is carried out, this is included in the £80 fee.
+              </p>
+            </div>
+          </div>
+
+          <div
+            className="glass-card"
+            style={{
+              padding: "1.5rem",
+              marginBottom: "2rem",
+            }}
+          >
+            <p
+              style={{
+                margin: "0 0 0.75rem 0",
+                color: "var(--color-text-primary)",
+                fontWeight: "600",
+              }}
+            >
+              Before you book
+            </p>
+
+            <p
+              style={{
+                margin: 0,
+                lineHeight: "1.7",
+                color: "var(--color-text-secondary)",
+              }}
+            >
+              This is a booking request, not a confirmed appointment. Your
+              details will be reviewed and we will contact you to confirm
+              suitability and availability. Treatment is only carried out when
+              clinically appropriate.
+            </p>
+
+            <div style={{ marginTop: "1rem" }}>
+              <Link to="/faqs" className="home-link">
+                Read FAQs before booking
+              </Link>
+            </div>
+          </div>
+
+          <div
+            style={{
+              width: "100%",
+              padding: "1.5rem",
+              borderRadius: "20px",
+              background: "rgba(255, 255, 255, 0.05)",
+              backdropFilter: "blur(10px)",
+              border: "1px solid rgba(255,255,255,0.1)",
+              boxShadow: "0 20px 40px rgba(0,0,0,0.25)",
+            }}
+          >
+            <iframe
+              src="https://docs.google.com/forms/d/e/1FAIpQLScSRbsEhxitkF7RJSdCN9Z701wBMJ7cDnhDTobllrWAWgcNGw/viewform?embedded=true"
+              width="100%"
+              height="1600"
+              style={{
+                border: "none",
+                borderRadius: "12px",
+                background: "#fff",
+              }}
+              title="Palaemon Ear Care Booking Form"
+            >
+              Loading…
+            </iframe>
+          </div>
+        </div>
       </div>
     </section>
   );
