@@ -32,55 +32,36 @@ function Navbar() {
               color: "var(--color-text-secondary)",
             }}
           >
-            <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
+            <Link to="/" className="nav-link">
               Home
             </Link>
 
-            <Link
-              to="/ear-care"
-              style={{ textDecoration: "none", color: "inherit" }}
-            >
+            <Link to="/ear-care" className="nav-link">
               Ear Care
             </Link>
 
-            <Link
-              to="/clinical-services"
-              style={{ textDecoration: "none", color: "inherit" }}
-            >
-              Clinical Services
+            <Link to="/clinical-services" className="nav-link">
+              Clinical
             </Link>
 
-            <Link
-              to="/pricing"
-              style={{ textDecoration: "none", color: "inherit" }}
-            >
+            <Link to="/care-home-support" className="nav-link">
+              Care Homes
+            </Link>
+
+            <Link to="/pricing" className="nav-link">
               Pricing
             </Link>
 
-            <Link
-              to="/faqs"
-              style={{ textDecoration: "none", color: "inherit" }}
-            >
+            <Link to="/faqs" className="nav-link">
               FAQs
+            </Link>
+
+            <Link to="/contact" className="nav-link">
+              Contact
             </Link>
           </nav>
 
-          <Link
-            to="/booking"
-            style={{
-              padding: "0.7rem 1.25rem",
-              borderRadius: "var(--radius-md)",
-              background: "var(--color-accent)",
-              color: "#000",
-              fontWeight: "600",
-              textDecoration: "none",
-              display: "inline-flex",
-              alignItems: "center",
-              justifyContent: "center",
-              whiteSpace: "nowrap",
-              boxShadow: "0 6px 18px rgba(76, 201, 240, 0.28)",
-            }}
-          >
+          <Link to="/booking" className="nav-cta-button">
             Book Now
           </Link>
         </div>

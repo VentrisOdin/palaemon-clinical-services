@@ -6,6 +6,11 @@ function ServicesOverview() {
       text: "Home-based ear wax removal and microsuction delivered with a professional, clinically led approach.",
     },
     {
+      title: "Care Home Clinical Support",
+      status: "Upcoming service",
+      text: "Paramedic-led support for care homes, focused on early identification of deterioration, escalation support, staff reassurance, and clear documentation.",
+    },
+    {
       title: "Health MOTs",
       status: "In development",
       text: "General health-focused assessment appointments designed to provide reassurance, screening, and early insight.",
@@ -25,39 +30,30 @@ function ServicesOverview() {
       status: "Planned",
       text: "Structured screening appointments including cranial nerve and related neurological assessment elements.",
     },
-    {
-      title: "Mobile Clinical Services",
-      status: "Future expansion",
-      text: "A growing paramedic-led service model designed to bring professional assessment and support into accessible settings.",
-    },
   ];
 
   return (
-    <section
-      className="home-section"
-      id="services"
-      style={{
-        paddingTop: "2rem",
-        paddingBottom: "3rem",
-      }}
-    >
+    <section className="section" id="services">
       <div className="container">
         <div
-          className="home-section-stack"
           style={{
+            display: "grid",
             gap: "1.75rem",
           }}
         >
           <div
-            className="home-heading-block"
             style={{
-              maxWidth: "760px",
+              maxWidth: "820px",
               animation: "riseUp 0.8s ease",
             }}
           >
             <p
-              className="home-eyebrow"
               style={{
+                textTransform: "uppercase",
+                letterSpacing: "0.18rem",
+                color: "var(--color-accent)",
+                fontSize: "0.95rem",
+                fontWeight: "600",
                 marginBottom: "0.9rem",
               }}
             >
@@ -66,11 +62,11 @@ function ServicesOverview() {
 
             <h2
               style={{
-                fontSize: "1.7rem",
+                fontSize: "2.1rem",
                 lineHeight: "1.2",
                 fontWeight: "700",
                 marginBottom: "1rem",
-                maxWidth: "680px",
+                maxWidth: "760px",
               }}
             >
               Built to start with ear care and grow beyond it
@@ -78,42 +74,43 @@ function ServicesOverview() {
 
             <p
               style={{
-                fontSize: "1rem",
-                lineHeight: "1.7",
+                fontSize: "1.08rem",
+                lineHeight: "1.75",
                 color: "var(--color-text-secondary)",
-                maxWidth: "720px",
+                maxWidth: "780px",
               }}
             >
               Ear Care is the first active service under Palaemon Clinical
               Services, with further assessment and health-focused services
-              planned as the business develops.
+              planned as the business develops, including support for care homes.
             </p>
           </div>
 
           <div
-            className="home-card-grid"
             style={{
-              gap: "1.15rem",
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))",
+              gap: "1.25rem",
             }}
           >
             {services.map((service) => (
               <div
                 key={service.title}
-                className="glass-card home-info-card"
+                className="glass-card"
                 style={{
-                  padding: "1.45rem",
+                  padding: "1.6rem",
                   animation: "riseUp 0.8s ease",
                 }}
               >
                 <div
                   style={{
                     display: "inline-block",
-                    marginBottom: "0.8rem",
+                    marginBottom: "0.85rem",
                     padding: "0.35rem 0.65rem",
                     borderRadius: "999px",
-                    background: "rgba(76, 201, 240, 0.1)",
+                    background: "rgba(0, 94, 184, 0.1)",
                     color: "var(--color-accent)",
-                    fontSize: "0.78rem",
+                    fontSize: "0.8rem",
                     fontWeight: "600",
                   }}
                 >
@@ -122,9 +119,9 @@ function ServicesOverview() {
 
                 <h3
                   style={{
-                    fontSize: "1.02rem",
+                    fontSize: "1.08rem",
                     lineHeight: "1.35",
-                    marginBottom: "0.7rem",
+                    marginBottom: "0.75rem",
                     color: "var(--color-text-primary)",
                   }}
                 >
@@ -133,10 +130,9 @@ function ServicesOverview() {
 
                 <p
                   style={{
-                    fontSize: "0.98rem",
+                    fontSize: "1rem",
                     color: "var(--color-text-secondary)",
-                    lineHeight: "1.68",
-                    margin: 0,
+                    lineHeight: "1.7",
                   }}
                 >
                   {service.text}

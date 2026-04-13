@@ -62,7 +62,7 @@ function EarCareHero() {
 
                 <div className="earcare-hero-image-overlay" />
 
-                <div className="earcare-hero-image-caption">
+                <div className="earcare-hero-image-caption image-caption-strong">
                   <p className="earcare-hero-image-caption-label">
                     Ear Care at home
                   </p>

@@ -71,7 +71,7 @@ function HomeHero() {
 
               <div className="home-hero-image-overlay" />
 
-              <div className="home-hero-image-caption">
+              <div className="home-hero-image-caption image-caption-strong">
                 <p className="home-hero-image-caption-label">Home visit care</p>
 
                 <p className="home-hero-image-caption-copy">

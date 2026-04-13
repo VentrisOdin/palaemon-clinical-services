@@ -82,10 +82,27 @@ img {
   color: var(--color-text-primary);
 }
 
+.nav-link.active {
+  color: var(--color-accent);
+  font-weight: 600;
+  position: relative;
+}
+
+.nav-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--color-accent);
+  border-radius: 2px;
+}
+
 .nav-cta-button {
   padding: 0.7rem 1.25rem;
   border-radius: var(--radius-md);
-  background: var(--color-accent);
+  background: #005eb8;
   color: #ffffff;
   font-weight: 600;
   text-decoration: none;
@@ -337,7 +354,7 @@ img {
 }
 
 .home-primary-button {
-  background: var(--color-accent);
+  background: #005eb8;
   color: #ffffff;
   font-weight: 600;
 }
@@ -471,7 +488,8 @@ img {
 
 .home-link {
   color: var(--color-accent);
-  text-decoration: none;
+  text-decoration: underline;
+  text-underline-offset: 2px;
   font-weight: 600;
 }
 
@@ -716,6 +734,51 @@ img {
 }
 
 /* ---------------------------------- */
+/* NHS-STYLE TILES / PANELS / CAPTIONS */
+/* ---------------------------------- */
+
+.nhs-tile {
+  background: #005eb8;
+  color: #ffffff;
+  border: none;
+  box-shadow: 0 10px 24px rgba(0, 94, 184, 0.2);
+}
+
+.nhs-tile h2,
+.nhs-tile h3,
+.nhs-tile p {
+  color: #ffffff;
+}
+
+.nhs-tile .home-card-copy {
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.nhs-info-card {
+  background: #e8f1f8;
+  border: 1px solid #c7dcef;
+}
+
+.image-caption-light {
+  background: #e8f1f8;
+  border: 1px solid #c7dcef;
+  color: var(--color-text-primary);
+}
+
+.image-caption-strong {
+  background: #005eb8;
+  color: #ffffff;
+  border: 1px solid #005eb8;
+}
+
+.image-caption-strong .home-hero-image-caption-label,
+.image-caption-strong .earcare-hero-image-caption-label,
+.image-caption-strong .home-hero-image-caption-copy,
+.image-caption-strong .earcare-hero-image-caption-copy {
+  color: #ffffff;
+}
+
+/* ---------------------------------- */
 /* RESPONSIVE */
 /* ---------------------------------- */
 
@@ -795,6 +858,32 @@ img {
   .microsuction-explainer-grid {
     grid-template-columns: 1fr;
   }
+}
+
+/* ---------------------------------- */
+/* CLINICAL SERVICES - CARE HOMES */
+/* ---------------------------------- */
+
+.clinical-highlight-card {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: var(--radius-md);
+}
+
+.clinical-highlight-title {
+  margin-bottom: 1rem;
+  max-width: 760px;
+}
+
+.clinical-highlight-copy {
+  margin-bottom: 1rem;
+  max-width: 860px;
+}
+
+.clinical-highlight-link {
+  margin-top: 0.5rem;
+  display: inline-block;
 }
 
 @media (max-width: 640px) {

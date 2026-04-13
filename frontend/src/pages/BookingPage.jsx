@@ -68,7 +68,7 @@ function BookingPage() {
             }}
           >
             <div
-              className="glass-card home-info-card"
+              className="glass-card home-info-card nhs-tile"
               style={{
                 padding: "1.6rem",
               }}
@@ -86,7 +86,7 @@ function BookingPage() {
                 style={{
                   fontSize: "2rem",
                   fontWeight: "700",
-                  color: "var(--color-accent)",
+                  color: "#ffffff",
                   marginBottom: "0.85rem",
                 }}
               >
@@ -100,7 +100,7 @@ function BookingPage() {
             </div>
 
             <div
-              className="glass-card home-info-card"
+              className="glass-card home-info-card nhs-tile"
               style={{
                 padding: "1.6rem",
               }}
@@ -118,7 +118,7 @@ function BookingPage() {
                 style={{
                   fontSize: "2rem",
                   fontWeight: "700",
-                  color: "var(--color-accent)",
+                  color: "#ffffff",
                   marginBottom: "0.85rem",
                 }}
               >
@@ -133,10 +133,12 @@ function BookingPage() {
           </div>
 
           <div
-            className="glass-card"
+            className="nhs-info-card"
             style={{
               padding: "1.5rem",
               marginBottom: "2rem",
+              borderRadius: "var(--radius-md)",
+              boxShadow: "var(--shadow-soft)",
             }}
           >
             <p
@@ -174,10 +176,9 @@ function BookingPage() {
               width: "100%",
               padding: "1.5rem",
               borderRadius: "20px",
-              background: "rgba(255, 255, 255, 0.05)",
-              backdropFilter: "blur(10px)",
-              border: "1px solid rgba(255,255,255,0.1)",
-              boxShadow: "0 20px 40px rgba(0,0,0,0.25)",
+              background: "#ffffff",
+              border: "1px solid var(--color-border)",
+              boxShadow: "var(--shadow-soft)",
             }}
           >
             <iframe

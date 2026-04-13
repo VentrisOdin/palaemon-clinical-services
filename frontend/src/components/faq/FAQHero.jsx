@@ -6,7 +6,6 @@ function FAQHero() {
       <div className="container">
         <div className="glass-card faq-hero-card">
           <div className="pricing-hero-grid">
-            {/* LEFT */}
             <div>
               <p className="home-eyebrow">FAQs</p>
 
@@ -20,7 +19,6 @@ function FAQHero() {
               </p>
             </div>
 
-            {/* RIGHT IMAGE */}
             <div className="pricing-hero-image-wrap">
               <div className="pricing-hero-image-glow" />
 

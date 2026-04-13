@@ -32,7 +32,7 @@ function PricingCards() {
           {prices.map((item) => (
             <div
               key={item.title}
-              className="glass-card home-info-card"
+              className="glass-card home-info-card nhs-tile"
               style={{ padding: "1.6rem" }}
             >
               <h2
@@ -48,7 +48,7 @@ function PricingCards() {
                 style={{
                   fontSize: "1.9rem",
                   fontWeight: "700",
-                  color: "var(--color-accent)",
+                  color: "#ffffff",
                   marginBottom: "0.85rem",
                 }}
               >
@@ -61,11 +61,13 @@ function PricingCards() {
         </div>
 
         <div
-          className="glass-card"
+          className="nhs-info-card"
           style={{
             marginTop: "1.5rem",
             padding: "1.5rem",
             maxWidth: "900px",
+            borderRadius: "var(--radius-md)",
+            boxShadow: "var(--shadow-soft)",
           }}
         >
           <p

@@ -9,7 +9,7 @@ function SplashScreen() {
         placeItems: "center",
         padding: "2rem",
         background:
-          "radial-gradient(circle at center, rgba(76, 201, 240, 0.18), transparent 26%), linear-gradient(180deg, var(--color-bg-secondary) 0%, var(--color-bg-primary) 100%)",
+          "radial-gradient(circle at center, rgba(0, 94, 184, 0.18), transparent 26%), linear-gradient(180deg, var(--color-bg-secondary) 0%, var(--color-bg-primary) 100%)",
       }}
     >
       <div
@@ -38,7 +38,7 @@ function SplashScreen() {
               width: "220px",
               height: "220px",
               borderRadius: "999px",
-              background: "rgba(76, 201, 240, 0.18)",
+              background: "rgba(0, 94, 184, 0.18)",
               filter: "blur(30px)",
             }}
           />
@@ -53,6 +53,8 @@ function SplashScreen() {
               display: "block",
               position: "relative",
               zIndex: 1,
+              filter:
+                "brightness(0) saturate(100%) invert(32%) sepia(98%) saturate(749%) hue-rotate(186deg) brightness(95%) contrast(96%)",
             }}
           />
         </div>
@@ -63,7 +65,7 @@ function SplashScreen() {
             fontWeight: "700",
             letterSpacing: "0.16rem",
             textTransform: "uppercase",
-            color: "var(--color-accent)",
+            color: "var(--color-accent)", // should already be NHS blue
           }}
         >
           Palaemon Clinical Services

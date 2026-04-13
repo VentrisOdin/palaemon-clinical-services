@@ -56,7 +56,7 @@ function MicrosuctionExplainer() {
           <div className="microsuction-explainer-image-wrap">
             <div className="microsuction-explainer-image-glow" />
 
-            <div className="glass-card microsuction-explainer-image-card">
+            <div className="microsuction-explainer-image-card">
               <img
                 src={diagram}
                 alt="Diagram showing microsuction ear wax removal"
