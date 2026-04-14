@@ -23,20 +23,31 @@ function MicrosuctionProcess() {
             A simple, professional appointment process
           </h2>
 
-          <ol
+          <div
             style={{
-              paddingLeft: "1.2rem",
-              color: "var(--color-text-secondary)",
-              lineHeight: "1.9",
-              fontSize: "1rem",
+              background: "#005EB8",
+              color: "#ffffff",
+              borderRadius: "18px",
+              padding: "1.75rem 1.75rem 1.75rem 2rem",
+              marginTop: "1.25rem",
               maxWidth: "720px",
-              margin: 0,
             }}
           >
-            {steps.map((step) => (
-              <li key={step}>{step}</li>
-            ))}
-          </ol>
+            <ol
+              style={{
+                paddingLeft: "1.2rem",
+                lineHeight: "1.9",
+                fontSize: "1rem",
+                margin: 0,
+              }}
+            >
+              {steps.map((step) => (
+                <li key={step} style={{ marginBottom: "0.5rem" }}>
+                  {step}
+                </li>
+              ))}
+            </ol>
+          </div>
         </div>
       </div>
     </section>
