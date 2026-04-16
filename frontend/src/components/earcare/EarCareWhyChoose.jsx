@@ -3,27 +3,27 @@ import { ShieldCheck, House, ClipboardCheck } from "lucide-react";
 function EarCareWhyChoose() {
   const items = [
     {
-      title: "HCPC registered paramedic",
-      text: "Care delivered by a registered paramedic, bringing clinical judgement, patient safety awareness, and a professional standard that sets Palaemon apart from non-clinical providers.",
-      icon: ShieldCheck,
-    },
-    {
-      title: "Home visit convenience",
-      text: "Appointments take place in the comfort of your own home, avoiding travel, waiting rooms, and unnecessary disruption to your day.",
+      title: "Professional home visits",
+      text: "Appointments take place in the comfort of your own home, making ear wax removal simpler, more convenient, and less stressful.",
       icon: House,
     },
     {
-      title: "Clear and professional process",
-      text: "Straightforward booking, transparent pricing, and a patient-focused approach from first contact through to treatment.",
+      title: "Calm and reassuring approach",
+      text: "We focus on making each appointment feel clear, comfortable, and straightforward from start to finish.",
+      icon: ShieldCheck,
+    },
+    {
+      title: "Clear and simple process",
+      text: "Straightforward booking, transparent pricing, and a professional experience throughout.",
       icon: ClipboardCheck,
     },
   ];
 
   return (
     <section
-  className="section section-tight"
-  id="why-choose-ear-care"
->
+      className="section section-tight"
+      id="why-choose-ear-care"
+    >
       <div className="container">
         <div
           style={{
@@ -59,7 +59,7 @@ function EarCareWhyChoose() {
                 maxWidth: "760px",
               }}
             >
-              Microsuction with a professional, clinical approach
+              Ear wax removal designed around comfort and convenience
             </h2>
 
             <p
@@ -71,10 +71,9 @@ function EarCareWhyChoose() {
                 margin: 0,
               }}
             >
-              Palaemon Ear Care is a paramedic-led service designed to feel
-              professional, reassuring, and convenient from the first click
-              onwards, combining clinical confidence with the practicality of
-              home visits.
+              Palaemon Ear Care is designed to feel professional, reassuring,
+              and convenient from the first click onwards, combining a careful
+              approach with the practicality of home visits.
             </p>
           </div>
 

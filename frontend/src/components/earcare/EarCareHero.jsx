@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import BrandLogo from "../common/EarCareBrand";
 import earImage from "../../assets/images/ear-exam.jpeg";
 
 function EarCareHero() {
@@ -8,6 +9,44 @@ function EarCareHero() {
         <div className="glass-card earcare-hero-card">
           <div className="earcare-hero-grid">
             <div className="earcare-hero-left">
+              <div
+                className="glass-card"
+                style={{
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: "0.85rem",
+                  padding: "0.8rem 1rem",
+                  marginBottom: "1rem",
+                  borderRadius: "16px",
+                  border: "1px solid rgba(76, 201, 240, 0.16)",
+                  background: "rgba(255, 255, 255, 0.72)",
+                }}
+              >
+                <BrandLogo size={34} />
+                <div style={{ lineHeight: 1.2 }}>
+                  <p
+                    style={{
+                      margin: 0,
+                      fontSize: "1rem",
+                      fontWeight: "700",
+                      color: "var(--color-text-primary)",
+                    }}
+                  >
+                    Palaemon Ear Care
+                  </p>
+                  <p
+                    style={{
+                      margin: 0,
+                      marginTop: "0.2rem",
+                      fontSize: "0.82rem",
+                      color: "var(--color-text-secondary)",
+                    }}
+                  >
+                    A trading name of Palaemon Clinical Services
+                  </p>
+                </div>
+              </div>
+
               <p className="home-eyebrow">Home visit ear wax removal</p>
 
               <div className="earcare-hero-heading-wrap">
@@ -16,14 +55,15 @@ function EarCareHero() {
                 </h1>
 
                 <h2 className="earcare-hero-subtitle">
-                  Delivered by an HCPC registered paramedic
+                  Professional, reassuring care in the comfort of your own home
                 </h2>
               </div>
 
               <p className="earcare-hero-copy">
-                Safe, effective ear wax removal carried out in the comfort of
-                your own home. No travel, no waiting rooms — just professional
-                care delivered with a calm, clinical approach.
+                A convenient home visit service for people experiencing blocked
+                ears due to wax build-up. No travel, no waiting rooms — just a
+                careful, professional approach designed to make ear wax removal
+                as comfortable and straightforward as possible.
               </p>
 
               <div className="earcare-hero-button-row">
@@ -38,9 +78,9 @@ function EarCareHero() {
 
               <div className="earcare-hero-pill-row">
                 {[
-                  "HCPC registered paramedic",
                   "Home visit appointments",
-                  "Microsuction treatment",
+                  "Microsuction ear wax removal",
+                  "Calm, professional approach",
                   "Transparent pricing",
                 ].map((item) => (
                   <div key={item} className="earcare-hero-pill">
@@ -56,7 +96,7 @@ function EarCareHero() {
               <div className="glass-card earcare-hero-image-card">
                 <img
                   src={earImage}
-                  alt="Ear examination using otoscope"
+                  alt="Professional providing ear wax removal during a home visit"
                   className="earcare-hero-image"
                 />
 
@@ -64,12 +104,12 @@ function EarCareHero() {
 
                 <div className="earcare-hero-image-caption image-caption-strong">
                   <p className="earcare-hero-image-caption-label">
-                    Ear Care at home
+                    Ear care at home
                   </p>
 
                   <p className="earcare-hero-image-caption-copy">
-                    Professional, home-based ear care delivered with a calm and
-                    clinically led approach.
+                    Convenient ear wax removal delivered in a calm and
+                    reassuring home environment.
                   </p>
                 </div>
               </div>
