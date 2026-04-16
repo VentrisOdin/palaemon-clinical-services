@@ -3,32 +3,32 @@ function ServicesOverview() {
     {
       title: "Ear Care",
       status: "Available now",
-      text: "Home-based ear wax removal and microsuction delivered with a professional, clinically led approach.",
+      text: "Home-based ear wax removal using microsuction, delivered with a calm, professional, and reassuring approach.",
     },
     {
-      title: "Care Home Clinical Support",
-      status: "Upcoming service",
-      text: "Paramedic-led support for care homes, focused on early identification of deterioration, escalation support, staff reassurance, and clear documentation.",
+      title: "Care Home Support",
+      status: "Planned for the future",
+      text: "A future service being developed to provide additional support for care settings, with a focus on communication, reassurance, and continuity.",
     },
     {
       title: "Health MOTs",
-      status: "In development",
-      text: "General health-focused assessment appointments designed to provide reassurance, screening, and early insight.",
+      status: "Planned for the future",
+      text: "A planned future service intended to offer convenient home-based wellbeing checks and general support appointments.",
     },
     {
-      title: "ECG Assessment",
-      status: "Planned",
-      text: "Cardiovascular screening and ECG-based assessment as part of a wider future clinical service offering.",
+      title: "Cardiovascular Assessment",
+      status: "Planned for the future",
+      text: "A future service being explored as part of a wider expansion into regulated home-based support services.",
     },
     {
       title: "Respiratory Assessment",
-      status: "Planned",
-      text: "Respiratory-focused review and assessment to support broader community-based clinical appointments.",
+      status: "Planned for the future",
+      text: "A planned area of future development as Palaemon expands its wider service offering.",
     },
     {
-      title: "Neurological Screening",
-      status: "Planned",
-      text: "Structured screening appointments including cranial nerve and related neurological assessment elements.",
+      title: "Cranial Nerve Assessment",
+      status: "Planned for the future",
+      text: "A future area of service development that may form part of Palaemon’s longer-term regulated service expansion.",
     },
   ];
 
@@ -57,7 +57,7 @@ function ServicesOverview() {
                 marginBottom: "0.9rem",
               }}
             >
-              Services
+              Future Services
             </p>
 
             <h2
@@ -78,11 +78,26 @@ function ServicesOverview() {
                 lineHeight: "1.75",
                 color: "var(--color-text-secondary)",
                 maxWidth: "780px",
+                marginBottom: "0.85rem",
               }}
             >
-              Ear Care is the first active service under Palaemon Clinical
-              Services, with further assessment and health-focused services
-              planned as the business develops, including support for care homes.
+              Ear Care is the first active service under Palaemon, with a wider
+              range of home-based services planned for the future as the
+              business develops.
+            </p>
+
+            <p
+              style={{
+                fontSize: "1.08rem",
+                lineHeight: "1.75",
+                color: "var(--color-text-secondary)",
+                maxWidth: "780px",
+              }}
+            >
+              We are currently preparing for Care Quality Commission (CQC)
+              registration to support the future expansion of regulated
+              services. Services shown below are not yet available unless marked
+              as available now.
             </p>
           </div>
 

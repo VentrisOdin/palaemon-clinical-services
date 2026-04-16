@@ -5,27 +5,29 @@ function ClinicalServicesCareHomes() {
     <section className="home-section">
       <div className="container">
         <div className="nhs-info-card clinical-highlight-card">
-          <p className="home-eyebrow">Upcoming service</p>
+          <p className="home-eyebrow">Future service</p>
 
           <h2 className="home-section-title clinical-highlight-title">
-            Care Home Clinical Support
+            Future Care Home Support
           </h2>
 
           <p className="home-section-copy clinical-highlight-copy">
-            Palaemon Clinical Services is also being developed to support care
-            homes with paramedic-led clinical input. The focus is on early
-            identification of deterioration, staff reassurance, escalation
-            support, and clear documentation.
+            Palaemon is developing a future service aimed at supporting care
+            homes with additional visiting support designed to improve
+            communication, reassurance, and continuity around resident care.
           </p>
 
           <p className="home-section-copy clinical-highlight-copy">
-            This service is intended to help care home teams feel more
-            supported, improve communication around unwell residents, and add a
-            clinically informed layer of decision support where appropriate.
+            This service is not yet available and will only be introduced as
+            part of the wider development of Palaemon’s future services and the
+            appropriate regulatory process.
           </p>
 
-          <Link to="/care-home-support" className="home-link clinical-highlight-link">
-            Learn more about care home clinical support
+          <Link
+            to="/future-services"
+            className="home-link clinical-highlight-link"
+          >
+            Learn more about future services
           </Link>
         </div>
       </div>

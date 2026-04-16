@@ -41,13 +41,9 @@ function Navbar() {
             </Link>
 
             <Link to="/clinical-services" className="nav-link">
-              Clinical
+              Future Services
             </Link>
-
-            <Link to="/care-home-support" className="nav-link">
-              Care Homes
-            </Link>
-
+            
             <Link to="/pricing" className="nav-link">
               Pricing
             </Link>
