@@ -28,6 +28,7 @@ function Footer() {
 
       {/* Links */}
       <div
+        className="footer-links-primary"   // 👈 added
         style={{
           display: "flex",
           flexWrap: "wrap",
@@ -47,6 +48,7 @@ function Footer() {
 
       {/* Legal Links */}
       <div
+        className="footer-links-secondary" // 👈 added
         style={{
           marginTop: "1rem",
           display: "flex",

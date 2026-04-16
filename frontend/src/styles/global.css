@@ -71,6 +71,82 @@ img {
 /* NAVBAR */
 /* ---------------------------------- */
 
+.site-header {
+  padding: 1.25rem 0;
+}
+
+.navbar-shell {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  gap: 2rem;
+}
+
+.navbar-top-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-links-wrap {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navbar-nav {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  color: var(--color-text-secondary);
+}
+
+.navbar-cta {
+  white-space: nowrap;
+}
+
+.navbar-menu-button {
+  display: none;
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  background: #ffffff;
+  cursor: pointer;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.navbar-menu-button span {
+  display: block;
+  width: 19px;
+  height: 2px;
+  background: var(--color-text-primary);
+  border-radius: 999px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.navbar-menu-button.is-open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.navbar-menu-button.is-open span:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar-menu-button.is-open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
 .nav-link {
   text-decoration: none;
   color: var(--color-text-secondary);
@@ -135,6 +211,12 @@ img {
   transform: translateY(-4px);
   border-color: rgba(0, 94, 184, 0.22);
   box-shadow: 0 14px 30px rgba(0, 0, 0, 0.1);
+}
+
+.earcare-brand-bar {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.85rem;
 }
 
 .earcare-hero-card {
@@ -686,6 +768,10 @@ img {
   display: block;
 }
 
+.booking-form-mobile {
+  display: none;
+}
+
 /* ---------------------------------- */
 /* MICROSUCTION EXPLAINER */
 /* ---------------------------------- */
@@ -779,6 +865,41 @@ img {
 }
 
 /* ---------------------------------- */
+/* FOOTER */
+/* ---------------------------------- */
+
+.footer-links-primary,
+.footer-links-secondary {
+  width: 100%;
+}
+
+/* ---------------------------------- */
+/* CLINICAL SERVICES - CARE HOMES */
+/* ---------------------------------- */
+
+.clinical-highlight-card {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: var(--radius-md);
+}
+
+.clinical-highlight-title {
+  margin-bottom: 1rem;
+  max-width: 760px;
+}
+
+.clinical-highlight-copy {
+  margin-bottom: 1rem;
+  max-width: 860px;
+}
+
+.clinical-highlight-link {
+  margin-top: 0.5rem;
+  display: inline-block;
+}
+
+/* ---------------------------------- */
 /* RESPONSIVE */
 /* ---------------------------------- */
 
@@ -860,33 +981,145 @@ img {
   }
 }
 
-/* ---------------------------------- */
-/* CLINICAL SERVICES - CARE HOMES */
-/* ---------------------------------- */
+@media (max-width: 768px) {
+  .navbar-shell {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.9rem;
+    padding: 1rem !important;
+  }
 
-.clinical-highlight-card {
-  padding: 2rem;
-  max-width: 1000px;
-  margin: 0 auto;
-  border-radius: var(--radius-md);
-}
+  .navbar-top-row {
+    width: 100%;
+  }
 
-.clinical-highlight-title {
-  margin-bottom: 1rem;
-  max-width: 760px;
-}
+  .navbar-links-wrap {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+    padding-top: 0.25rem;
+  }
 
-.clinical-highlight-copy {
-  margin-bottom: 1rem;
-  max-width: 860px;
-}
+  .navbar-links-wrap.is-open {
+    display: flex;
+  }
 
-.clinical-highlight-link {
-  margin-top: 0.5rem;
-  display: inline-block;
+  .navbar-nav {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.35rem;
+  }
+
+  .nav-link {
+    padding: 0.7rem 0.2rem;
+    text-align: center;
+  }
+
+  .nav-link.active::after {
+    display: none;
+  }
+
+  .navbar-cta {
+    width: 100%;
+  }
+
+  .navbar-menu-button {
+    display: inline-flex;
+  }
 }
 
 @media (max-width: 640px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  .container {
+    width: min(100% - 1.25rem, var(--max-width));
+  }
+
+  .glass-card,
+  .nhs-info-card,
+  .nhs-tile,
+  .home-info-card,
+  .earcare-feature-card,
+  .earcare-hero-card,
+  .microsuction-hero-card,
+  .pricing-hero-card,
+  .faq-hero-card,
+  .booking-image-card,
+  .clinical-highlight-card {
+    max-width: 100%;
+  }
+
+  img,
+  iframe {
+    max-width: 100%;
+  }
+
+  .home-section {
+    padding: 2rem 0;
+  }
+
+  .home-hero-section {
+    padding: 2rem 0 1.5rem;
+  }
+
+  .home-hero-title {
+    font-size: 2rem;
+    line-height: 1.05;
+  }
+
+  .home-hero-subtitle {
+    font-size: 1.08rem;
+  }
+
+  .home-copy {
+    font-size: 0.98rem;
+    line-height: 1.65;
+  }
+
+  .home-primary-button,
+  .home-secondary-button {
+    width: 100%;
+  }
+
+  .home-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-info-card {
+    padding: 1.25rem;
+  }
+
+  .earcare-hero-card,
+  .microsuction-hero-card,
+  .pricing-hero-card,
+  .faq-hero-card {
+    padding: 2rem 1.1rem !important;
+  }
+
+  .earcare-hero-title {
+    font-size: 2rem;
+    line-height: 1.05;
+  }
+
+  .earcare-hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .earcare-hero-copy {
+    font-size: 0.98rem;
+    line-height: 1.65;
+  }
+
+  .earcare-hero-button-row .home-primary-button,
+  .earcare-hero-button-row .home-secondary-button {
+    width: 100%;
+  }
+
   .earcare-hero-image-card {
     min-height: 220px;
   }
@@ -897,5 +1130,76 @@ img {
 
   .booking-image {
     height: 220px;
+  }
+
+  .home-copy,
+  .home-section-copy,
+  .home-card-copy,
+  .earcare-hero-copy {
+    overflow-wrap: break-word;
+    word-break: normal;
+  }
+
+  .footer-links-primary,
+  .footer-links-secondary {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.55rem !important;
+  }
+
+  .booking-form-embed {
+    display: none;
+  }
+
+  .booking-form-mobile {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .earcare-brand-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .earcare-hero-title {
+    font-size: clamp(1.8rem, 6vw, 2.3rem);
+  }
+
+  .nav-link {
+    font-size: 0.88rem;
+  }
+
+  .navbar-nav {
+    gap: 0.25rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .container {
+    width: min(100% - 1.25rem, var(--max-width));
+  }
+
+  .home-eyebrow {
+    font-size: 0.82rem;
+    letter-spacing: 0.12rem;
+  }
+
+  .home-section-title {
+    font-size: 1.45rem;
+  }
+
+  .home-card-title {
+    font-size: 0.98rem;
+  }
+
+  .home-card-copy,
+  .home-section-copy {
+    font-size: 0.95rem;
+  }
+
+  .nav-link {
+    font-size: 0.9rem;
   }
 }

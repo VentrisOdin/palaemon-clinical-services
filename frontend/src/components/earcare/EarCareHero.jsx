@@ -42,7 +42,7 @@ function EarCareHero() {
                       color: "var(--color-text-secondary)",
                     }}
                   >
-                    A trading name of Palaemon Clinical Services
+                   
                   </p>
                 </div>
               </div>

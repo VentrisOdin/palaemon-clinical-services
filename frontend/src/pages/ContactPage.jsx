@@ -1,32 +1,26 @@
 import { Link } from "react-router-dom";
-import BrandLogo from "../components/common/EarCareBrand";
+import EarCareBrand from "../components/common/EarCareBrand";
 
 function ContactPage() {
   return (
     <section className="home-section" style={{ paddingTop: "3rem" }}>
       <div className="container">
-        {/* LARGE LOGO + COMPANY NAME */}
+        {/* BRAND */}
         <div
           style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
+            width: "100%",
             marginBottom: "2.5rem",
             textAlign: "center",
           }}
         >
-          <BrandLogo size={220} />
-
           <div
             style={{
-              marginTop: "1rem",
-              fontSize: "1.4rem",
-              fontWeight: "700",
-              letterSpacing: "0.08rem",
-              textTransform: "uppercase",
-              color: "var(--color-accent)",
+              width: "fit-content",
+              maxWidth: "100%",
+              margin: "0 auto",
             }}
           >
+            <EarCareBrand size={180} stacked />
           </div>
         </div>
 
@@ -39,6 +33,7 @@ function ContactPage() {
             padding: "2rem",
             textAlign: "center",
             animation: "riseUp 0.8s ease",
+            width: "100%",
           }}
         >
           <p className="home-eyebrow">Contact</p>
@@ -49,35 +44,44 @@ function ContactPage() {
 
           <p
             className="home-section-copy"
-            style={{ marginBottom: "1.75rem" }}
+            style={{ marginBottom: "1.75rem", maxWidth: "100%" }}
           >
             If you have any questions or would like to discuss a booking, you
             can contact us directly using the details below.
           </p>
 
           {/* EMAIL */}
-          <div style={{ marginBottom: "1.25rem" }}>
+          <div style={{ marginBottom: "1.25rem", maxWidth: "100%" }}>
             <p className="home-card-title" style={{ marginBottom: "0.25rem" }}>
               Email
             </p>
             <a
               href="mailto:info@palaemonclinicalservices.co.uk"
               className="home-link"
-              style={{ fontSize: "1.05rem" }}
+              style={{
+                display: "inline-block",
+                maxWidth: "100%",
+                whiteSpace: "nowrap", // 👈 never break
+                fontSize: "clamp(0.8rem, 3.5vw, 1.05rem)", // 👈 responsive scaling
+              }}
             >
               info@palaemonclinicalservices.co.uk
             </a>
           </div>
 
           {/* PHONE */}
-          <div style={{ marginBottom: "2rem" }}>
+          <div style={{ marginBottom: "2rem", maxWidth: "100%" }}>
             <p className="home-card-title" style={{ marginBottom: "0.25rem" }}>
               Phone
             </p>
             <a
               href="tel:07738095862"
               className="home-link"
-              style={{ fontSize: "1.05rem" }}
+              style={{
+                fontSize: "1.05rem",
+                display: "inline-block",
+                maxWidth: "100%",
+              }}
             >
               07738 095862
             </a>

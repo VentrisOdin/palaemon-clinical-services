@@ -10,7 +10,8 @@ function BrandLogo({ size = 40, showText = true, stacked = false }) {
         justifyContent: "center",
         gap: stacked ? "1.5rem" : "0.85rem",
         textAlign: "center",
-        whiteSpace: stacked ? "normal" : "nowrap",
+        flexWrap: "wrap",
+        maxWidth: "100%",
       }}
     >
       <div
@@ -29,9 +30,13 @@ function BrandLogo({ size = 40, showText = true, stacked = false }) {
           style={{
             fontSize: stacked ? "1.35rem" : "1.2rem",
             fontWeight: "700",
-            letterSpacing: stacked ? "0.14rem" : "0.12rem",
+            letterSpacing: stacked ? "0.14rem" : "0.08rem",
             textTransform: "uppercase",
             color: "var(--color-accent)",
+            whiteSpace: "normal",
+            overflowWrap: "anywhere",
+            lineHeight: 1.2,
+            maxWidth: "100%",
           }}
         >
           Palaemon Clinical Services

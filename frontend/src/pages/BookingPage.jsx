@@ -188,19 +188,49 @@ function BookingPage() {
               boxShadow: "var(--shadow-soft)",
             }}
           >
-            <iframe
-              src="https://docs.google.com/forms/d/e/1FAIpQLScSRbsEhxitkF7RJSdCN9Z701wBMJ7cDnhDTobllrWAWgcNGw/viewform?embedded=true"
-              width="100%"
-              height="1600"
-              style={{
-                border: "none",
-                borderRadius: "12px",
-                background: "#fff",
-              }}
-              title="Palaemon Ear Care Booking Form"
-            >
-              Loading…
-            </iframe>
+            {/* Desktop / tablet embedded form */}
+            <div className="booking-form-embed">
+              <iframe
+                src="https://docs.google.com/forms/d/e/1FAIpQLScSRbsEhxitkF7RJSdCN9Z701wBMJ7cDnhDTobllrWAWgcNGw/viewform?embedded=true"
+                width="100%"
+                height="1600"
+                style={{
+                  border: "none",
+                  borderRadius: "12px",
+                  background: "#fff",
+                }}
+                title="Palaemon Ear Care Booking Form"
+              >
+                Loading…
+              </iframe>
+            </div>
+
+            {/* Mobile-friendly fallback */}
+            <div className="booking-form-mobile">
+              <p
+                className="home-section-copy"
+                style={{
+                  marginBottom: "1rem",
+                  maxWidth: "100%",
+                  textAlign: "center",
+                }}
+              >
+                For the best experience on mobile, please open the booking form
+                using the button below.
+              </p>
+
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLScSRbsEhxitkF7RJSdCN9Z701wBMJ7cDnhDTobllrWAWgcNGw/viewform"
+                target="_blank"
+                rel="noreferrer"
+                className="home-primary-button"
+                style={{
+                  width: "100%",
+                }}
+              >
+                Open Booking Form
+              </a>
+            </div>
           </div>
         </div>
       </div>
