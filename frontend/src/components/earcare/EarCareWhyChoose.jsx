@@ -20,10 +20,7 @@ function EarCareWhyChoose() {
   ];
 
   return (
-    <section
-      className="section section-tight"
-      id="why-choose-ear-care"
-    >
+    <section className="section section-tight" id="why-choose-ear-care">
       <div className="container">
         <div
           style={{
@@ -78,8 +75,8 @@ function EarCareWhyChoose() {
           </div>
 
           <div
+            className="home-card-grid"
             style={{
-              display: "grid",
               gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
               gap: "1.25rem",
             }}
@@ -90,10 +87,9 @@ function EarCareWhyChoose() {
               return (
                 <div
                   key={item.title}
-                  className="glass-card earcare-feature-card"
+                  className="home-info-card nhs-tile earcare-feature-card"
                   style={{
                     padding: "1.6rem",
-                    animation: "riseUp 0.8s ease",
                     display: "flex",
                     flexDirection: "column",
                     gap: "0.95rem",
@@ -104,11 +100,10 @@ function EarCareWhyChoose() {
                       width: "48px",
                       height: "48px",
                       borderRadius: "14px",
-                      background: "rgba(76, 201, 240, 0.06)",
-                      border: "1px solid rgba(76, 201, 240, 0.14)",
+                      background: "rgba(255, 255, 255, 0.12)",
                       display: "grid",
                       placeItems: "center",
-                      color: "var(--color-accent)",
+                      color: "#ffffff",
                     }}
                   >
                     <Icon size={22} />
@@ -119,7 +114,7 @@ function EarCareWhyChoose() {
                       fontSize: "1.05rem",
                       lineHeight: "1.35",
                       margin: 0,
-                      color: "var(--color-text-primary)",
+                      color: "#ffffff",
                     }}
                   >
                     {item.title}
@@ -128,9 +123,9 @@ function EarCareWhyChoose() {
                   <p
                     style={{
                       fontSize: "0.98rem",
-                      color: "var(--color-text-secondary)",
                       lineHeight: "1.7",
                       margin: 0,
+                      color: "rgba(255, 255, 255, 0.92)",
                     }}
                   >
                     {item.text}

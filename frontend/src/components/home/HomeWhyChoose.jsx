@@ -40,7 +40,13 @@ function HomeWhyChoose() {
 
           <div className="home-card-grid">
             {items.map((item) => (
-              <div key={item.title} className="glass-card home-info-card">
+              <div
+                key={item.title}
+                className="home-info-card nhs-tile"
+                style={{
+                  padding: "1.6rem",
+                }}
+              >
                 <h3 className="home-card-title">{item.title}</h3>
                 <p className="home-card-copy">{item.text}</p>
               </div>

@@ -32,7 +32,7 @@ function EarCareHero() {
                       color: "var(--color-text-primary)",
                     }}
                   >
-                    Palaemon Ear Care
+                  
                   </p>
                   <p
                     style={{
