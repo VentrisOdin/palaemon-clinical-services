@@ -11,10 +11,22 @@ function Footer() {
         textAlign: "center",
       }}
     >
-      <div style={{ marginBottom: "1rem", fontWeight: "600" }}>
-        Palaemon Clinical Services
+      {/* Brand */}
+      <div style={{ marginBottom: "0.5rem", fontWeight: "700" }}>
+        Palaemon Ear Care
       </div>
 
+      <div
+        style={{
+          fontSize: "0.8rem",
+          color: "rgba(0,0,0,0.6)",
+          marginBottom: "1rem",
+        }}
+      >
+        A trading name of Palaemon Clinical Services
+      </div>
+
+      {/* Links */}
       <div
         style={{
           display: "flex",
@@ -25,15 +37,34 @@ function Footer() {
         }}
       >
         <Link to="/ear-care">Ear Care</Link>
+        <Link to="/microsuction">Microsuction</Link>
         <Link to="/booking">Booking</Link>
+        <Link to="/pricing">Pricing</Link>
+        <Link to="/faqs">FAQs</Link>
         <Link to="/contact">Contact</Link>
-        <Link to="/privacy">Privacy Policy</Link>
-        <Link to="/terms">Terms</Link>
-        <Link to="/insurance">Insurance</Link>
-        <Link to="/complaints">Complaints</Link>
-        <Link to="/cancellation">Cancellation Policy</Link>
+        <Link to="/future-services">Future Services</Link>
       </div>
 
+      {/* Legal Links */}
+      <div
+        style={{
+          marginTop: "1rem",
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "center",
+          gap: "0.75rem 1.25rem",
+          fontSize: "0.85rem",
+          color: "rgba(0,0,0,0.7)",
+        }}
+      >
+        <Link to="/privacy">Privacy Policy</Link>
+        <Link to="/terms">Terms & Conditions</Link>
+        <Link to="/cancellation">Cancellation Policy</Link>
+        <Link to="/complaints">Complaints</Link>
+        <Link to="/insurance">Insurance</Link>
+      </div>
+
+      {/* Copyright */}
       <div
         style={{
           marginTop: "1.5rem",

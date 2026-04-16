@@ -12,6 +12,11 @@ import PricingPage from "./pages/PricingPage";
 import FAQPage from "./pages/FAQPage";
 import CareHomeSupport from "./pages/CareHomeSupport";
 import ContactPage from "./pages/ContactPage";
+import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
+import TermsPage from "./pages/TermsPage";
+import CancellationPage from "./pages/CancellationPage";
+import ComplaintsPage from "./pages/ComplaintsPage";
+import InsurancePage from "./pages/InsurancePage";
 
 function App() {
   const [showSplash, setShowSplash] = useState(true);
@@ -41,6 +46,11 @@ function App() {
           <Route path="/faqs" element={<FAQPage />} />
           <Route path="/care-home-support" element={<CareHomeSupport />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/privacy" element={<PrivacyPolicyPage />} />
+          <Route path="/terms" element={<TermsPage />} />
+          <Route path="/cancellation" element={<CancellationPage />} />
+          <Route path="/complaints" element={<ComplaintsPage />} />
+          <Route path="/insurance" element={<InsurancePage />} />
         </Routes>
       </MainLayout>
     </Router>
