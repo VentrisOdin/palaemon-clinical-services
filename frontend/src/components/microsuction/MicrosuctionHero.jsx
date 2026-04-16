@@ -4,9 +4,7 @@ function MicrosuctionHero() {
   return (
     <section className="home-hero-section">
       <div className="container">
-        <div
-          className="glass-card microsuction-hero-card"
-        >
+        <div className="glass-card microsuction-hero-card">
           <p className="home-eyebrow">Microsuction</p>
 
           <h1 className="microsuction-hero-title">
@@ -14,10 +12,10 @@ function MicrosuctionHero() {
           </h1>
 
           <p className="home-copy microsuction-hero-copy">
-            Microsuction is a safe and effective method of ear wax removal that
-            uses gentle suction to remove wax under direct visualisation. It does
-            not use water irrigation and allows treatment to be carried out in a
-            controlled and precise way.
+            Microsuction is a gentle method of ear wax removal that uses light
+            suction to remove excess wax under direct visual guidance. It does
+            not use water irrigation and allows ear wax removal to be carried
+            out in a careful and precise way.
           </p>
 
           <div className="home-button-row">

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import BrandLogo from "../components/common/BrandLogo";
+import BrandLogo from "../components/common/EarCareBrand";
 
 function ContactPage() {
   return (

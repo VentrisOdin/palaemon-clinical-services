@@ -10,7 +10,6 @@ function MicrosuctionSuitability() {
       }}
     >
       <div className="container">
-        {/* 👇 Add heading block for flow */}
         <div
           className="home-content-block"
           style={{
@@ -18,13 +17,12 @@ function MicrosuctionSuitability() {
             marginBottom: "1.5rem",
           }}
         >
-          <p className="home-eyebrow">When it’s used</p>
+          <p className="home-eyebrow">When it may help</p>
 
           <h2 className="home-section-title">
-            When ear wax build-up may need treatment
+            When ear wax build-up may be the cause of blocked ears
           </h2>
 
-          {/* 👇 Image placed HERE */}
           <img
             src={blockage}
             alt="Example of ear wax blockage"
@@ -38,13 +36,12 @@ function MicrosuctionSuitability() {
           />
 
           <p className="home-section-copy">
-            Ear wax build-up can cause blocked ears, reduced hearing, or a
-            feeling of fullness. In some cases, treatment may help relieve these
-            symptoms.
+            A build-up of ear wax can cause blocked ears, reduced hearing, or a
+            feeling of fullness. In some cases, ear wax removal may help improve
+            comfort and reduce these symptoms.
           </p>
         </div>
 
-        {/* 👇 Your existing cards (unchanged) */}
         <div className="home-card-grid">
           <div className="glass-card home-info-card">
             <h3 className="home-card-title">Who it may help</h3>
@@ -58,9 +55,9 @@ function MicrosuctionSuitability() {
           <div className="glass-card home-info-card">
             <h3 className="home-card-title">Why people choose it</h3>
             <p className="home-card-copy">
-              It is a controlled, precise method of ear wax removal and does not
-              use water irrigation. Treatment is carried out with direct
-              visualisation.
+              It is a gentle and precise method of ear wax removal that does not
+              use water irrigation. Wax is removed while the ear is clearly
+              viewed throughout the procedure.
             </p>
           </div>
 
@@ -68,7 +65,8 @@ function MicrosuctionSuitability() {
             <h3 className="home-card-title">When to seek advice first</h3>
             <p className="home-card-copy">
               If you have severe pain, discharge, sudden hearing loss, fever, or
-              signs of infection, you should seek medical advice before booking.
+              signs of infection, you should seek advice from your GP or another
+              appropriate healthcare professional before booking.
             </p>
           </div>
         </div>

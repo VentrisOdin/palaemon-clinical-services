@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import consultationImage from "../assets/images/Consultation.jpeg";
+import EarCareBrand from "../components/common/EarCareBrand";
 
 function BookingPage() {
   return (
@@ -14,6 +15,11 @@ function BookingPage() {
             animation: "riseUp 0.8s ease",
           }}
         >
+          {/* Brand Bar */}
+          <div style={{ marginBottom: "1rem" }}>
+            <EarCareBrand />
+          </div>
+
           <p className="home-eyebrow">Booking</p>
 
           <h1
@@ -36,24 +42,24 @@ function BookingPage() {
             }}
           >
             Request a home visit for ear wax removal using microsuction. All
-            booking requests are reviewed before confirmation to ensure
-            suitability and availability.
+            booking requests are reviewed before confirmation to check
+            availability and whether the service is suitable for your needs.
           </p>
 
           <div className="glass-card booking-image-card">
             <img
               src={consultationImage}
-              alt="Clinician carrying out a home visit consultation"
+              alt="Home visit ear wax removal appointment"
               className="booking-image"
             />
           </div>
 
           <div className="home-pill-row" style={{ marginBottom: "2rem" }}>
             {[
-              "HCPC registered paramedic",
               "Home visits",
-              "Microsuction treatment",
+              "Microsuction ear wax removal",
               "Transparent pricing",
+              "Simple booking process",
             ].map((item) => (
               <span key={item} className="home-pill">
                 {item}
@@ -94,8 +100,8 @@ function BookingPage() {
               </div>
 
               <p className="home-card-copy">
-                Includes assessment and microsuction treatment where
-                appropriate. Covers both ears if required.
+                Includes home visit ear wax removal using microsuction. Covers
+                both ears if required.
               </p>
             </div>
 
@@ -111,7 +117,7 @@ function BookingPage() {
                   margin: "0 0 0.75rem 0",
                 }}
               >
-                Consultation Only
+                Visit Without Wax Removal
               </h2>
 
               <div
@@ -126,8 +132,8 @@ function BookingPage() {
               </div>
 
               <p className="home-card-copy">
-                If no treatment is required following assessment. If treatment
-                is carried out, this is included in the £80 fee.
+                If no wax is present, or if we are unable to proceed on the day,
+                the visit charge is £50.
               </p>
             </div>
           </div>
@@ -160,8 +166,9 @@ function BookingPage() {
             >
               This is a booking request, not a confirmed appointment. Your
               details will be reviewed and we will contact you to confirm
-              suitability and availability. Treatment is only carried out when
-              clinically appropriate.
+              availability and whether this service is suitable for you. If
+              we’re unable to proceed on the day, we will explain why and advise
+              you on the next steps.
             </p>
 
             <div style={{ marginTop: "1rem" }}>

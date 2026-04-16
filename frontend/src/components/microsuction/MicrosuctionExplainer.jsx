@@ -32,7 +32,7 @@ function MicrosuctionExplainer() {
                 maxWidth: "560px",
               }}
             >
-              A precise method of ear wax removal
+              A gentle and precise method of ear wax removal
             </h2>
 
             <p
@@ -41,15 +41,15 @@ function MicrosuctionExplainer() {
                 marginBottom: "1rem",
               }}
             >
-              During microsuction, the ear is examined and wax is removed using a
-              small suction device under direct visualisation. This allows
-              treatment to be carried out carefully and accurately.
+              During microsuction, a small suction device is used to carefully
+              remove excess wax while the ear is viewed clearly throughout the
+              process. This allows ear wax removal to be carried out in a
+              controlled and precise way.
             </p>
 
             <p className="home-section-copy">
               Because microsuction does not rely on water irrigation, it is often
-              regarded as a clean and controlled method of ear wax removal and is
-              considered one of the gold standards.
+              chosen as a clean and comfortable method of ear wax removal.
             </p>
           </div>
 
@@ -64,8 +64,8 @@ function MicrosuctionExplainer() {
               />
 
               <p className="microsuction-explainer-caption">
-                Microsuction removes wax using controlled suction while the ear
-                is visualised clearly throughout the procedure.
+                Microsuction removes wax using gentle suction while the ear is
+                clearly visualised throughout the process.
               </p>
             </div>
           </div>

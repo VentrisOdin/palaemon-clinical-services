@@ -2,8 +2,8 @@ function MicrosuctionProcess() {
   const steps = [
     "Book your appointment online.",
     "A home visit is arranged at a suitable time.",
-    "Your ears are assessed before treatment.",
-    "Microsuction is carried out if appropriate.",
+    "Your ears are checked before the procedure.",
+    "Microsuction is carried out where suitable.",
     "Aftercare advice is provided if needed.",
   ];
 
@@ -20,7 +20,7 @@ function MicrosuctionProcess() {
           <p className="home-eyebrow">What to expect</p>
 
           <h2 className="home-section-title">
-            A simple, professional appointment process
+            A simple, straightforward appointment process
           </h2>
 
           <div

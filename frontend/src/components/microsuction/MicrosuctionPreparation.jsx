@@ -33,8 +33,8 @@ function MicrosuctionPreparation() {
             className="home-section-copy"
             style={{ marginBottom: "1.75rem", textAlign: "center" }}
           >
-            Preparing your ears beforehand can help make treatment safer, more
-            comfortable, and more likely to be completed successfully in one
+            Preparing your ears beforehand can help make ear wax removal more
+            comfortable and increase the chances of it being completed in one
             visit.
           </p>
 
@@ -141,10 +141,9 @@ function MicrosuctionPreparation() {
 
             <p className="home-section-copy" style={{ marginBottom: 0 }}>
               In some cases, symptoms such as blocked ears or reduced hearing
-              may not be caused by wax. If no wax is found, or if microsuction
-              is not clinically appropriate, we will explain what we have found
-              and advise you on the next best steps. A consultation and ear
-              assessment still takes place during the visit.
+              may not be caused by wax. If no wax is present, or if we are unable
+              to proceed, we will explain what we can see and advise you on the
+              next steps, including contacting your GP if appropriate.
             </p>
           </div>
         </div>
