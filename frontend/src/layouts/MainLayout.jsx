@@ -1,10 +1,23 @@
 import Navbar from "../components/layout/Navbar";
+import Footer from "../components/layout/Footer";
 
 function MainLayout({ children }) {
   return (
-    <div className="app-shell">
+    <div
+      className="app-shell"
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        minHeight: "100vh",
+      }}
+    >
       <Navbar />
-      <main>{children}</main>
+
+      <main style={{ flex: 1 }}>
+        {children}
+      </main>
+
+      <Footer />
     </div>
   );
 }
