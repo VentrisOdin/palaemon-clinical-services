@@ -19,12 +19,12 @@ function HomeCTA() {
               maxWidth: "100%",
             }}
           >
-            Book your home ear care appointment
+            Book your home ear wax removal appointment
           </h2>
 
           <p className="home-cta-copy">
             Learn more about the service, see how it works, and take the next
-            step toward safe, professional ear care at home.
+            step toward convenient, professional ear wax removal at home.
           </p>
 
           <Link to="/ear-care" className="home-primary-button">

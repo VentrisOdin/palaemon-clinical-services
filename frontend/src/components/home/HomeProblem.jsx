@@ -3,16 +3,16 @@ function HomeProblem() {
     <section className="home-section">
       <div className="container">
         <div className="home-content-block">
-          <p className="home-eyebrow">Ear problems</p>
+          <p className="home-eyebrow">Blocked ears</p>
 
           <h2 className="home-section-title">
-            Struggling with blocked ears or hearing issues?
+            Struggling with blocked ears or reduced hearing?
           </h2>
 
           <p className="home-section-copy" style={{ marginBottom: "1rem" }}>
-            Ear wax build-up can cause reduced hearing, discomfort, and
-            irritation. Microsuction is a safe and effective way to remove ear
-            wax and restore normal hearing.
+            A build-up of ear wax can lead to reduced hearing, a blocked
+            sensation, and general discomfort. Microsuction is a gentle and
+            effective way to remove excess wax and help improve comfort.
           </p>
 
           <ul

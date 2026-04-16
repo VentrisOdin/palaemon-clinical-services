@@ -25,14 +25,15 @@ function HomeHero() {
               </h1>
 
               <h2 className="home-hero-subtitle">
-                Delivered by an HCPC registered paramedic
+                Professional, reassuring care in the comfort of your own home
               </h2>
             </div>
 
             <p className="home-copy">
-              Safe, effective treatment carried out in the comfort of your own
-              home. No travel, no waiting rooms — just professional care
-              delivered with a calm, clinical approach.
+              A convenient home visit service for people experiencing blocked
+              ears due to wax build-up. No travel, no waiting rooms — just a
+              careful, professional approach designed to make ear wax removal as
+              comfortable and straightforward as possible.
             </p>
 
             <div className="home-button-row">
@@ -47,9 +48,9 @@ function HomeHero() {
 
             <div className="home-pill-row">
               {[
-                "HCPC registered paramedic",
                 "Home visit appointments",
-                "Microsuction treatment",
+                "Microsuction ear wax removal",
+                "Calm, professional approach",
                 "Clear pricing",
               ].map((item) => (
                 <span key={item} className="home-pill">
@@ -65,18 +66,18 @@ function HomeHero() {
             <div className="glass-card home-hero-image-card">
               <img
                 src={homePageImage}
-                alt="Clinician carrying out a home visit consultation"
+                alt="Professional providing ear wax removal during a home visit"
                 className="home-hero-image"
               />
 
               <div className="home-hero-image-overlay" />
 
               <div className="home-hero-image-caption image-caption-strong">
-                <p className="home-hero-image-caption-label">Home visit care</p>
+                <p className="home-hero-image-caption-label">Home visit ear care</p>
 
                 <p className="home-hero-image-caption-copy">
-                  Professional ear care delivered with a calm, clinically led
-                  approach in the comfort of your own home.
+                  Convenient ear wax removal delivered in a calm and reassuring
+                  home environment.
                 </p>
               </div>
             </div>

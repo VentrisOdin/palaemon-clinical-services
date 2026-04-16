@@ -21,7 +21,7 @@ function HomeIntro() {
               marginBottom: "1rem",
             }}
           >
-            Building a more accessible way to deliver clinical care
+            A more convenient approach to home-based care
           </h2>
 
           <p
@@ -32,14 +32,25 @@ function HomeIntro() {
               marginBottom: "0.9rem",
             }}
           >
-            Palaemon Clinical Services is designed to make professional healthcare
-            more accessible outside of traditional settings. Ear Care is the first
-            active service, with additional home-based clinical services planned as
-            the business develops.
+            Palaemon is focused on making essential services more accessible at home.
+            Ear wax removal is currently available, with additional services planned
+            for the future as the business develops.
+          </p>
+
+          <p
+            style={{
+              fontSize: "1rem",
+              lineHeight: "1.7",
+              color: "var(--color-text-secondary)",
+              marginBottom: "0.9rem",
+            }}
+          >
+            Future services will be introduced following the appropriate regulatory
+            processes.
           </p>
 
           <Link to="/clinical-services" className="home-link">
-            Learn more about Palaemon Clinical Services
+            Learn more about our future services
           </Link>
         </div>
       </div>
