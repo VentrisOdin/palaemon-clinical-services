@@ -10,11 +10,7 @@ function FAQList() {
       answer:
         "Yes. Appointments are carried out as home visits, allowing treatment to take place in the comfort of your own home.",
     },
-    {
-      question: "Who provides the treatment?",
-      answer:
-        "Treatment is delivered by an HCPC registered paramedic, providing a calm, professional and clinically informed approach.",
-    },
+    
     {
       question: "How much does treatment cost?",
       answer:
@@ -38,7 +34,7 @@ function FAQList() {
     {
       question: "Will both ears be treated if needed?",
       answer:
-        "Yes. The £80 treatment fee covers both ears if treatment is required in both.",
+        "Yes. The £80 fee covers both ears if microsuction is required in both.",
     },
     {
       question: "What happens after I submit the booking form?",
