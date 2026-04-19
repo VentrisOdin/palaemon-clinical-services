@@ -15,7 +15,6 @@ function BookingPage() {
             animation: "riseUp 0.8s ease",
           }}
         >
-          {/* Brand Bar */}
           <div style={{ marginBottom: "1rem" }}>
             <EarCareBrand />
           </div>
@@ -41,9 +40,9 @@ function BookingPage() {
               marginBottom: "1.25rem",
             }}
           >
-            Request a home visit for ear wax removal using microsuction. All
-            booking requests are reviewed before confirmation to check
-            availability and whether the service is suitable for your needs.
+            Choose your preferred appointment time, then pay the booking deposit.
+            After payment, you will be redirected to complete the booking form.
+            All booking requests are reviewed before confirmation.
           </p>
 
           <div className="glass-card booking-image-card">
@@ -58,7 +57,7 @@ function BookingPage() {
             {[
               "Home visits",
               "Microsuction ear wax removal",
-              "Transparent pricing",
+              "£20 deposit to secure booking",
               "Simple booking process",
             ].map((item) => (
               <span key={item} className="home-pill">
@@ -164,11 +163,13 @@ function BookingPage() {
                 color: "var(--color-text-secondary)",
               }}
             >
-              This is a booking request, not a confirmed appointment. Your
-              details will be reviewed and we will contact you to confirm
-              availability and whether this service is suitable for you. If
-              we’re unable to proceed on the day, we will explain why and advise
-              you on the next steps.
+              This is a booking request, not a confirmed appointment. Please
+              complete the steps below using the same name and email address
+              throughout so we can match your request correctly. A £20 deposit
+              is required to secure your booking request and will be deducted
+              from the total cost of your appointment. If we are unable to
+              proceed or the service is not suitable, your deposit will be fully
+              refunded.
             </p>
 
             <div style={{ marginTop: "1rem" }}>
@@ -178,6 +179,95 @@ function BookingPage() {
             </div>
           </div>
 
+          {/* Step 1: Calendar */}
+          <div
+            style={{
+              width: "100%",
+              padding: "1.5rem",
+              borderRadius: "20px",
+              background: "#ffffff",
+              border: "1px solid var(--color-border)",
+              boxShadow: "var(--shadow-soft)",
+              marginBottom: "1.5rem",
+            }}
+          >
+            <h2
+              style={{
+                margin: "0 0 0.75rem 0",
+                fontSize: "1.35rem",
+                color: "var(--color-text-primary)",
+              }}
+            >
+              Step 1: Choose your preferred appointment time
+            </h2>
+
+            <p
+              style={{
+                margin: "0 0 1rem 0",
+                lineHeight: "1.7",
+                color: "var(--color-text-secondary)",
+              }}
+            >
+              Select a day and time that suits you for your home visit.
+            </p>
+
+            <iframe
+              src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3MkpeOOkXnQZVPx0c08NnSSNnOtXluyq0cSzLsseVoAPO1Rz6PBVTkio5cruGmq6DiOuPXCjpg?gv=true"
+              style={{
+                border: 0,
+                width: "100%",
+                height: "600px",
+                borderRadius: "12px",
+                background: "#fff",
+              }}
+              frameBorder="0"
+              title="Palaemon Clinical Services Appointment Scheduling"
+            />
+          </div>
+
+          {/* Step 2: Deposit */}
+          <div
+            style={{
+              width: "100%",
+              padding: "1.5rem",
+              borderRadius: "20px",
+              background: "#ffffff",
+              border: "1px solid var(--color-border)",
+              boxShadow: "var(--shadow-soft)",
+              marginBottom: "1.5rem",
+            }}
+          >
+            <h2
+              style={{
+                margin: "0 0 0.75rem 0",
+                fontSize: "1.35rem",
+                color: "var(--color-text-primary)",
+              }}
+            >
+              Step 2: Pay your £20 booking deposit
+            </h2>
+
+            <p
+              style={{
+                margin: "0 0 1rem 0",
+                lineHeight: "1.7",
+                color: "var(--color-text-secondary)",
+              }}
+            >
+              Once you have chosen your appointment time, please pay your £20
+              booking deposit. After payment, you will be redirected to the
+              booking and consent form to complete your request.
+            </p>
+
+            <a
+              href="https://buy.stripe.com/28EfZh9ro06Mg9V8ff1ZS00"
+              className="home-primary-button"
+            >
+              Pay £20 Deposit
+            </a>
+          </div>
+
+          {/* Step 3: What happens next */}
           <div
             style={{
               width: "100%",
@@ -188,49 +278,39 @@ function BookingPage() {
               boxShadow: "var(--shadow-soft)",
             }}
           >
-            {/* Desktop / tablet embedded form */}
-            <div className="booking-form-embed">
-              <iframe
-                src="https://docs.google.com/forms/d/e/1FAIpQLScSRbsEhxitkF7RJSdCN9Z701wBMJ7cDnhDTobllrWAWgcNGw/viewform?embedded=true"
-                width="100%"
-                height="1600"
-                style={{
-                  border: "none",
-                  borderRadius: "12px",
-                  background: "#fff",
-                }}
-                title="Palaemon Ear Care Booking Form"
-              >
-                Loading…
-              </iframe>
-            </div>
+            <h2
+              style={{
+                margin: "0 0 0.75rem 0",
+                fontSize: "1.35rem",
+                color: "var(--color-text-primary)",
+              }}
+            >
+              Step 3: Complete your booking form after payment
+            </h2>
 
-            {/* Mobile-friendly fallback */}
-            <div className="booking-form-mobile">
-              <p
-                className="home-section-copy"
-                style={{
-                  marginBottom: "1rem",
-                  maxWidth: "100%",
-                  textAlign: "center",
-                }}
-              >
-                For the best experience on mobile, please open the booking form
-                using the button below.
-              </p>
+            <p
+              style={{
+                margin: "0 0 1rem 0",
+                lineHeight: "1.7",
+                color: "var(--color-text-secondary)",
+              }}
+            >
+              After you pay your deposit, you will be redirected to the booking and consent
+              form to complete your details. Please use the same name and email
+              address throughout so we can match your booking correctly.
+            </p>
 
-              <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLScSRbsEhxitkF7RJSdCN9Z701wBMJ7cDnhDTobllrWAWgcNGw/viewform"
-                target="_blank"
-                rel="noreferrer"
-                className="home-primary-button"
-                style={{
-                  width: "100%",
-                }}
-              >
-                Open Booking Form
-              </a>
-            </div>
+            <p
+              style={{
+                margin: 0,
+                lineHeight: "1.7",
+                color: "var(--color-text-secondary)",
+              }}
+            >
+              Once your appointment time, deposit, and booking form have all
+              been received, we will review your request and contact you to
+              confirm your appointment.
+            </p>
           </div>
         </div>
       </div>
