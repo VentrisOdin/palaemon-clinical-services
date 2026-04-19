@@ -1,4 +1,4 @@
-import logo from "../../assets/branding/palaemon-icon.svg";
+import logo from "../../assets/branding/palaemon-icon.png";
 
 function EarCareBrand({ size = 40, showText = true, stacked = false }) {
   return (
@@ -6,28 +6,27 @@ function EarCareBrand({ size = 40, showText = true, stacked = false }) {
       style={{
         display: "flex",
         flexDirection: stacked ? "column" : "row",
-        alignItems: "center",            // ✅ FIXED (always centered)
+        alignItems: "center",
         justifyContent: "center",
         gap: stacked ? "0.75rem" : "0.85rem",
-        textAlign: "center",             // ✅ FIXED
+        textAlign: "center",
         maxWidth: "100%",
-        width: "fit-content",            // ✅ CRITICAL for true centering
-        margin: "0 auto",                // ✅ ensures center in parent
+        width: "fit-content",
+        margin: "0 auto",
       }}
     >
-      {/* Logo */}
-      <div
+      <img
+        src={logo}
+        alt="Palaemon Ear Care logo"
         style={{
           width: `${size}px`,
           height: `${size}px`,
-          background: "var(--color-accent)",
-          WebkitMask: `url(${logo}) center / contain no-repeat`,
-          mask: `url(${logo}) center / contain no-repeat`,
+          objectFit: "contain",
+          display: "block",
           flexShrink: 0,
         }}
       />
 
-      {/* Text */}
       {showText && (
         <div
           style={{
@@ -45,8 +44,6 @@ function EarCareBrand({ size = 40, showText = true, stacked = false }) {
               textTransform: "uppercase",
               color: "var(--color-accent)",
               lineHeight: 1.2,
-
-              // ✅ SAFE WRAPPING (no broken words)
               whiteSpace: "normal",
               wordBreak: "normal",
               overflowWrap: "break-word",
@@ -60,7 +57,6 @@ function EarCareBrand({ size = 40, showText = true, stacked = false }) {
               fontSize: "0.8rem",
               color: "var(--color-text-secondary)",
               lineHeight: 1.3,
-
               whiteSpace: "normal",
               wordBreak: "normal",
               overflowWrap: "break-word",

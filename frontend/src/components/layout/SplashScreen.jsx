@@ -1,4 +1,4 @@
-import logo from "../../assets/branding/palaemon-icon.svg";
+import logo from "../../assets/branding/palaemon-icon.png";
 
 function SplashScreen() {
   return (
@@ -53,8 +53,6 @@ function SplashScreen() {
               display: "block",
               position: "relative",
               zIndex: 1,
-              filter:
-                "brightness(0) saturate(100%) invert(32%) sepia(98%) saturate(749%) hue-rotate(186deg) brightness(95%) contrast(96%)",
             }}
           />
         </div>
@@ -65,7 +63,7 @@ function SplashScreen() {
             fontWeight: "700",
             letterSpacing: "0.16rem",
             textTransform: "uppercase",
-            color: "var(--color-accent)", // should already be NHS blue
+            color: "var(--color-accent)",
           }}
         >
           Palaemon Clinical Services
