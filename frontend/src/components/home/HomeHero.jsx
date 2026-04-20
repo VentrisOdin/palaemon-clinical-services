@@ -36,6 +36,33 @@ function HomeHero() {
               comfortable and straightforward as possible.
             </p>
 
+            <div
+              style={{
+                background: "rgba(0, 94, 184, 0.08)",
+                border: "1px solid rgba(0, 94, 184, 0.18)",
+                borderRadius: "16px",
+                padding: "1rem 1.1rem",
+                marginBottom: "1.5rem",
+                maxWidth: "720px",
+              }}
+            >
+              <p
+                style={{
+                  margin: "0 0 0.5rem 0",
+                  fontSize: "0.95rem",
+                  lineHeight: 1.6,
+                  color: "var(--color-text-primary)",
+                }}
+              >
+                Providing home visit ear care across Hampshire, with
+                availability in selected areas of Surrey.
+              </p>
+
+              <Link to="/service-area" className="home-link">
+                View areas we cover
+              </Link>
+            </div>
+
             <div className="home-button-row">
               <Link to="/booking" className="home-primary-button">
                 Book Appointment

@@ -19,6 +19,14 @@ import CancellationPage from "./pages/CancellationPage";
 import ComplaintsPage from "./pages/ComplaintsPage";
 import InsurancePage from "./pages/InsurancePage";
 
+// ✅ NEW IMPORTS
+import ServiceArea from "./pages/ServiceArea";
+import ServiceAreaHampshire from "./pages/ServiceAreaHampshire";
+import ServiceAreaSurrey from "./pages/ServiceAreaSurrey";
+import EarWaxRemovalPortsmouth from "./pages/EarWaxRemovalPortsmouth";
+import EarWaxRemovalGuildford from "./pages/EarWaxRemovalGuildford";
+import EarWaxRemovalPetersfield from "./pages/EarWaxRemovalPetersfield";
+
 function App() {
   const [showSplash, setShowSplash] = useState(true);
 
@@ -36,7 +44,7 @@ function App() {
 
   return (
     <Router>
-      <ScrollToTop /> {/* ← FIX ADDED HERE */}
+      <ScrollToTop />
 
       <MainLayout>
         <Routes>
@@ -54,6 +62,14 @@ function App() {
           <Route path="/cancellation" element={<CancellationPage />} />
           <Route path="/complaints" element={<ComplaintsPage />} />
           <Route path="/insurance" element={<InsurancePage />} />
+
+          {/* ✅ SERVICE AREA STRUCTURE */}
+          <Route path="/service-area" element={<ServiceArea />} />
+          <Route path="/service-area-hampshire" element={<ServiceAreaHampshire />} />
+          <Route path="/service-area-surrey" element={<ServiceAreaSurrey />} />
+          <Route path="/ear-wax-removal-portsmouth" element={<EarWaxRemovalPortsmouth />} />
+          <Route path="/ear-wax-removal-guildford" element={<EarWaxRemovalGuildford />} />
+          <Route path="/ear-wax-removal-petersfield" element={<EarWaxRemovalPetersfield />} />
         </Routes>
       </MainLayout>
     </Router>

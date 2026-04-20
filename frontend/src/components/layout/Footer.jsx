@@ -64,6 +64,7 @@ function Footer() {
         <Link to="/cancellation">Cancellation Policy</Link>
         <Link to="/complaints">Complaints</Link>
         <Link to="/insurance">Insurance</Link>
+        <Link to="/service-area">Service Area</Link>
       </div>
 
       {/* Copyright */}
