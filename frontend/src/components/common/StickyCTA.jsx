@@ -1,8 +1,9 @@
-import { Link, useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 function StickyCTA() {
   const location = useLocation();
+  const navigate = useNavigate();
   const [visible, setVisible] = useState(false);
 
   // Hide on booking page
@@ -12,21 +13,16 @@ function StickyCTA() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 300) {
-        setVisible(true);
-      } else {
-        setVisible(false);
-      }
+      setVisible(window.scrollY > 300);
     };
 
     window.addEventListener("scroll", handleScroll);
-
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
-    <Link
-      to="/booking"
+    <button
+      onClick={() => navigate("/booking")}
       style={{
         position: "fixed",
         right: "20px",
@@ -34,14 +30,14 @@ function StickyCTA() {
         zIndex: 1000,
         background: "#005EB8",
         color: "#ffffff",
-        textDecoration: "none",
+        border: "none",
+        cursor: "pointer",
         fontWeight: "700",
         fontSize: "0.95rem",
         padding: "0.85rem 1.15rem",
         borderRadius: "999px",
         boxShadow: "0 10px 24px rgba(0, 0, 0, 0.18)",
 
-        // ✨ Animation
         opacity: visible ? 1 : 0,
         transform: visible ? "translateY(0)" : "translateY(20px)",
         transition: "opacity 0.3s ease, transform 0.3s ease",
@@ -49,7 +45,7 @@ function StickyCTA() {
       }}
     >
       Book Home Visit
-    </Link>
+    </button>
   );
 }
 
