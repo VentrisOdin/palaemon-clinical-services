@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import homePageImage from "../../assets/images/HomePagePicture.jpeg";
+import EarCareBrand from "../common/EarCareBrand";
 
 function HomeHero() {
   return (
@@ -29,6 +30,11 @@ function HomeHero() {
               </h2>
             </div>
 
+            {/* ✅ Ear Care Branding */}
+            <div style={{ marginBottom: "1rem" }}>
+              <EarCareBrand />
+            </div>
+
             <p className="home-copy">
               A convenient home visit service for people experiencing blocked
               ears due to wax build-up. No travel, no waiting rooms — just a
@@ -36,6 +42,7 @@ function HomeHero() {
               comfortable and straightforward as possible.
             </p>
 
+            {/* ✅ Service area box */}
             <div
               style={{
                 background: "rgba(0, 94, 184, 0.08)",
