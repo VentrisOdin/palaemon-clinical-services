@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useEffect, useState } from "react";
 import MainLayout from "./layouts/MainLayout";
 import SplashScreen from "./components/layout/SplashScreen";
+import ScrollToTop from "./components/utils/ScrollToTop";
 
 import Home from "./pages/Home";
 import EarCare from "./pages/EarCare";
@@ -35,6 +36,8 @@ function App() {
 
   return (
     <Router>
+      <ScrollToTop /> {/* ← FIX ADDED HERE */}
+
       <MainLayout>
         <Routes>
           <Route path="/" element={<Home />} />
