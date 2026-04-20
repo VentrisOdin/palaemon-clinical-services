@@ -84,7 +84,7 @@ function BookingPage() {
                   margin: "0 0 0.75rem 0",
                 }}
               >
-                Ear Wax Removal (Home Visit)
+                Assessment / Both Ears
               </h2>
 
               <div
@@ -99,8 +99,8 @@ function BookingPage() {
               </div>
 
               <p className="home-card-copy">
-                Includes home visit ear wax removal using microsuction. Covers
-                both ears if required.
+                Includes a home visit with full ear assessment and microsuction treatment for both ears if requiered.
+                
               </p>
             </div>
 
@@ -116,7 +116,7 @@ function BookingPage() {
                   margin: "0 0 0.75rem 0",
                 }}
               >
-                Visit Without Wax Removal
+                Assessment / Single Ear
               </h2>
 
               <div
@@ -131,8 +131,8 @@ function BookingPage() {
               </div>
 
               <p className="home-card-copy">
-                If no wax is present, or if we are unable to proceed on the day,
-                the visit charge is £50.
+                Includes a home visit with full ear assessment and microsuction treatment for one
+                ear if required.
               </p>
             </div>
           </div>
@@ -141,7 +141,7 @@ function BookingPage() {
             className="nhs-info-card"
             style={{
               padding: "1.5rem",
-              marginBottom: "2rem",
+              marginBottom: "1.25rem",
               borderRadius: "var(--radius-md)",
               boxShadow: "var(--shadow-soft)",
             }}
@@ -177,6 +177,66 @@ function BookingPage() {
                 Read FAQs before booking
               </Link>
             </div>
+          </div>
+
+          <div
+            style={{
+              background: "#005EB8",
+              color: "#ffffff",
+              borderRadius: "18px",
+              padding: "1.25rem 1.4rem",
+              marginBottom: "1.25rem",
+            }}
+          >
+            <div
+              style={{
+                fontSize: "0.75rem",
+                fontWeight: "700",
+                letterSpacing: "0.14rem",
+                textTransform: "uppercase",
+                marginBottom: "0.5rem",
+                opacity: 0.9,
+              }}
+            >
+              Important information
+            </div>
+
+            <div
+              style={{
+                fontSize: "0.98rem",
+                lineHeight: 1.7,
+                fontWeight: "500",
+              }}
+            >
+              All appointments include a full ear assessment. If microsuction is
+              not required, the visit is charged as a consultation at{" "}
+              <strong>£40</strong>.
+            </div>
+          </div>
+
+          <div
+            style={{
+              background: "rgba(0, 94, 184, 0.08)",
+              border: "1px solid rgba(0, 94, 184, 0.18)",
+              borderRadius: "16px",
+              padding: "1rem 1.1rem",
+              marginBottom: "2rem",
+            }}
+          >
+            <p
+              style={{
+                margin: 0,
+                fontSize: "0.95rem",
+                lineHeight: 1.6,
+                color: "var(--color-text-primary)",
+              }}
+            >
+              <strong>Preparation advice:</strong> If you believe you have a
+              build-up of ear wax, using olive oil drops or spray for{" "}
+              <strong>3 to 5 days before your appointment</strong> can help
+              soften the wax and make removal easier. These are available from
+              most pharmacies.
+            </p>
           </div>
 
           {/* Step 1: Calendar */}
@@ -295,9 +355,10 @@ function BookingPage() {
                 color: "var(--color-text-secondary)",
               }}
             >
-              After you pay your deposit, you will be redirected to the booking and consent
-              form to complete your details. Please use the same name and email
-              address throughout so we can match your booking correctly.
+              After you pay your deposit, you will be redirected to the booking
+              and consent form to complete your details. Please use the same
+              name and email address throughout so we can match your booking
+              correctly.
             </p>
 
             <p

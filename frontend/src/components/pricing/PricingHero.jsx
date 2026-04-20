@@ -20,6 +20,32 @@ function PricingHero() {
                 in the comfort of your own home.
               </p>
 
+              {/* 🔹 Preparation advice box */}
+              <div
+                style={{
+                  background: "rgba(0, 94, 184, 0.08)",
+                  border: "1px solid rgba(0, 94, 184, 0.18)",
+                  borderRadius: "16px",
+                  padding: "1rem 1.1rem",
+                  marginBottom: "1.5rem",
+                  marginTop: "0.5rem",
+                }}
+              >
+                <p
+                  style={{
+                    margin: 0,
+                    fontSize: "0.95rem",
+                    lineHeight: 1.6,
+                    color: "var(--color-text-primary)",
+                  }}
+                >
+                  <strong>Preparation advice:</strong> If you believe you have a
+                  build-up of ear wax, using olive oil drops or spray for{" "}
+                  <strong>3 to 5 days before your appointment</strong> can help
+                  soften the wax and make removal easier.
+                </p>
+              </div>
+
               <div className="home-button-row">
                 <Link to="/booking" className="home-primary-button">
                   Book Appointment

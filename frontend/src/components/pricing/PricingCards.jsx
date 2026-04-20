@@ -3,14 +3,19 @@ import { Link } from "react-router-dom";
 function PricingCards() {
   const prices = [
     {
-      title: "Ear Wax Removal (Home Visit)",
+      title: "Ear Wax Removal (Both Ears)",
       price: "£80",
-      text: "Includes assessment and microsuction treatment where appropriate. Covers both ears if required.",
+      text: "Includes full ear assessment and microsuction treatment for both ears where appropriate.",
+    },
+    {
+      title: "Single Ear Treatment",
+      price: "£50",
+      text: "Includes full ear assessment and microsuction treatment for one ear where required.",
     },
     {
       title: "Consultation Only",
-      price: "£50",
-      text: "If no treatment is required following assessment. If treatment is carried out, this is included in the £80 fee.",
+      price: "£40",
+      text: "If no microsuction treatment is required following assessment.",
     },
     {
       title: "Follow-up Appointment",
