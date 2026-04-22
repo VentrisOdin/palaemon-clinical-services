@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import MainLayout from "./layouts/MainLayout";
 import SplashScreen from "./components/layout/SplashScreen";
@@ -19,13 +19,55 @@ import CancellationPage from "./pages/CancellationPage";
 import ComplaintsPage from "./pages/ComplaintsPage";
 import InsurancePage from "./pages/InsurancePage";
 
-// ✅ NEW IMPORTS
 import ServiceArea from "./pages/ServiceArea";
 import ServiceAreaHampshire from "./pages/ServiceAreaHampshire";
 import ServiceAreaSurrey from "./pages/ServiceAreaSurrey";
 import EarWaxRemovalPortsmouth from "./pages/EarWaxRemovalPortsmouth";
 import EarWaxRemovalGuildford from "./pages/EarWaxRemovalGuildford";
 import EarWaxRemovalPetersfield from "./pages/EarWaxRemovalPetersfield";
+
+import QrLandingPage from "./pages/QrLandingPage/QrLandingPage";
+
+function AppRoutes() {
+  const location = useLocation();
+  const isQrPage = location.pathname === "/book-now";
+
+  if (isQrPage) {
+    return (
+      <Routes>
+        <Route path="/book-now" element={<QrLandingPage />} />
+      </Routes>
+    );
+  }
+
+  return (
+    <MainLayout>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/ear-care" element={<EarCare />} />
+        <Route path="/clinical-services" element={<ClinicalServices />} />
+        <Route path="/booking" element={<BookingPage />} />
+        <Route path="/microsuction" element={<Microsuction />} />
+        <Route path="/pricing" element={<PricingPage />} />
+        <Route path="/faqs" element={<FAQPage />} />
+        <Route path="/care-home-support" element={<CareHomeSupport />} />
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/privacy" element={<PrivacyPolicyPage />} />
+        <Route path="/terms" element={<TermsPage />} />
+        <Route path="/cancellation" element={<CancellationPage />} />
+        <Route path="/complaints" element={<ComplaintsPage />} />
+        <Route path="/insurance" element={<InsurancePage />} />
+
+        <Route path="/service-area" element={<ServiceArea />} />
+        <Route path="/service-area-hampshire" element={<ServiceAreaHampshire />} />
+        <Route path="/service-area-surrey" element={<ServiceAreaSurrey />} />
+        <Route path="/ear-wax-removal-portsmouth" element={<EarWaxRemovalPortsmouth />} />
+        <Route path="/ear-wax-removal-guildford" element={<EarWaxRemovalGuildford />} />
+        <Route path="/ear-wax-removal-petersfield" element={<EarWaxRemovalPetersfield />} />
+      </Routes>
+    </MainLayout>
+  );
+}
 
 function App() {
   const [showSplash, setShowSplash] = useState(true);
@@ -45,33 +87,7 @@ function App() {
   return (
     <Router>
       <ScrollToTop />
-
-      <MainLayout>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/ear-care" element={<EarCare />} />
-          <Route path="/clinical-services" element={<ClinicalServices />} />
-          <Route path="/booking" element={<BookingPage />} />
-          <Route path="/microsuction" element={<Microsuction />} />
-          <Route path="/pricing" element={<PricingPage />} />
-          <Route path="/faqs" element={<FAQPage />} />
-          <Route path="/care-home-support" element={<CareHomeSupport />} />
-          <Route path="/contact" element={<ContactPage />} />
-          <Route path="/privacy" element={<PrivacyPolicyPage />} />
-          <Route path="/terms" element={<TermsPage />} />
-          <Route path="/cancellation" element={<CancellationPage />} />
-          <Route path="/complaints" element={<ComplaintsPage />} />
-          <Route path="/insurance" element={<InsurancePage />} />
-
-          {/* ✅ SERVICE AREA STRUCTURE */}
-          <Route path="/service-area" element={<ServiceArea />} />
-          <Route path="/service-area-hampshire" element={<ServiceAreaHampshire />} />
-          <Route path="/service-area-surrey" element={<ServiceAreaSurrey />} />
-          <Route path="/ear-wax-removal-portsmouth" element={<EarWaxRemovalPortsmouth />} />
-          <Route path="/ear-wax-removal-guildford" element={<EarWaxRemovalGuildford />} />
-          <Route path="/ear-wax-removal-petersfield" element={<EarWaxRemovalPetersfield />} />
-        </Routes>
-      </MainLayout>
+      <AppRoutes />
     </Router>
   );
 }
