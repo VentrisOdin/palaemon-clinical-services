@@ -18,6 +18,10 @@ function HomeHero() {
           }}
         >
           <div className="home-left-column">
+            <div className="home-ear-care-brand-wrap">
+              <EarCareBrand />
+            </div>
+
             <p className="home-eyebrow">Home visit ear wax removal</p>
 
             <div className="home-hero-heading-wrap">
@@ -30,11 +34,6 @@ function HomeHero() {
               </h2>
             </div>
 
-            {/* ✅ Ear Care Branding */}
-            <div style={{ marginBottom: "1rem" }}>
-              <EarCareBrand />
-            </div>
-
             <p className="home-copy">
               A convenient home visit service for people experiencing blocked
               ears due to wax build-up. No travel, no waiting rooms — just a
@@ -42,7 +41,6 @@ function HomeHero() {
               comfortable and straightforward as possible.
             </p>
 
-            {/* ✅ Service area box */}
             <div
               style={{
                 background: "rgba(0, 94, 184, 0.08)",
@@ -107,7 +105,9 @@ function HomeHero() {
               <div className="home-hero-image-overlay" />
 
               <div className="home-hero-image-caption image-caption-strong">
-                <p className="home-hero-image-caption-label">Home visit ear care</p>
+                <p className="home-hero-image-caption-label">
+                  Home visit ear care
+                </p>
 
                 <p className="home-hero-image-caption-copy">
                   Convenient ear wax removal delivered in a calm and reassuring
