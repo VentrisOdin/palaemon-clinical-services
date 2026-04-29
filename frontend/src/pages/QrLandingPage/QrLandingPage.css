@@ -9,6 +9,7 @@
   padding: 2rem 0;
 }
 
+/* === BACKGROUND GLOW === */
 .qr-background-glow {
   position: absolute;
   border-radius: 999px;
@@ -33,6 +34,7 @@
   right: 8%;
 }
 
+/* === CONTAINER === */
 .qr-landing-container {
   display: flex;
   justify-content: center;
@@ -41,6 +43,7 @@
   z-index: 1;
 }
 
+/* === CARD === */
 .qr-landing-card {
   width: 100%;
   max-width: 640px;
@@ -55,10 +58,11 @@
     inset 0 1px 0 rgba(255, 255, 255, 0.75);
 }
 
+/* === LOGO === */
 .qr-logo-wrap {
   display: flex;
   justify-content: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
 }
 
 .qr-logo {
@@ -66,20 +70,13 @@
   height: auto;
 }
 
+/* === CONTENT === */
 .qr-content {
   max-width: 34rem;
   margin: 0 auto;
 }
 
-.qr-eyebrow {
-  font-size: 0.85rem;
-  font-weight: 800;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: #005eb8;
-  margin-bottom: 0.9rem;
-}
-
+/* === TITLE === */
 .qr-title {
   font-size: clamp(2.2rem, 5vw, 3.2rem);
   line-height: 1.08;
@@ -88,6 +85,7 @@
   text-wrap: balance;
 }
 
+/* === BODY TEXT === */
 .qr-copy {
   font-size: 1.08rem;
   line-height: 1.65;
@@ -96,6 +94,7 @@
   margin: 0 auto 0.8rem;
 }
 
+/* === TRUST === */
 .qr-trust {
   font-size: 0.98rem;
   font-weight: 700;
@@ -103,6 +102,7 @@
   margin-bottom: 1.35rem;
 }
 
+/* === REASSURANCE PILLS === */
 .qr-reassurance-row {
   display: flex;
   flex-wrap: wrap;
@@ -125,13 +125,15 @@
   font-weight: 700;
 }
 
+/* === ACTIONS === */
 .qr-actions {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: 0.9rem;
 }
 
+/* === PRIMARY BUTTON === */
 .qr-book-button {
   display: inline-flex;
   align-items: center;
@@ -170,6 +172,7 @@
   transform: translateY(0);
 }
 
+/* === SECONDARY LINK === */
 .qr-site-link {
   font-size: 0.96rem;
   font-weight: 600;
@@ -184,6 +187,22 @@
   opacity: 0.78;
 }
 
+/* === EMAIL LINK (NEW) === */
+.qr-email-link {
+  font-size: 0.9rem;
+  color: #6b7c8c;
+  text-decoration: none;
+  margin-top: 0.2rem;
+  transition: all 0.2s ease;
+}
+
+.qr-email-link:hover,
+.qr-email-link:focus-visible {
+  color: #005eb8;
+  text-decoration: underline;
+}
+
+/* === MOBILE === */
 @media (max-width: 640px) {
   .qr-landing-page {
     padding: 1.25rem 0;
