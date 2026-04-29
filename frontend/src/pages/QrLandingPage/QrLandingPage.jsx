@@ -26,8 +26,6 @@ function QrLandingPage() {
             </div>
 
             <div className="qr-content">
-              <p className="qr-eyebrow">Palaemon Ear Care</p>
-
               <h1 className="qr-title">
                 Home visit ear wax removal using microsuction
               </h1>
