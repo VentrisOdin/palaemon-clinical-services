@@ -51,6 +51,13 @@ function QrLandingPage() {
                 <Link to="/" className="qr-site-link">
                   View full website
                 </Link>
+
+                <a
+                  href="mailto:info@palaemonclinicalservices.co.uk"
+                  className="qr-email-link"
+                >
+                  Need help? Email us
+                </a>
               </div>
             </div>
           </div>
