@@ -33,7 +33,7 @@ function ClinicalServicesIntro() {
               maxWidth: "680px",
             }}
           >
-            Building a broader range of home-based support services
+            Developing paramedic-led clinical support in the community
           </h2>
 
           <p
@@ -44,10 +44,11 @@ function ClinicalServicesIntro() {
               maxWidth: "720px",
             }}
           >
-            Palaemon is being developed to expand beyond ear care, with a focus
-            on making additional services more accessible in the home
-            environment. The aim is to gradually introduce a wider range of
-            support services as the business grows.
+            Palaemon Clinical Services is being developed beyond ear care, with
+            a focus on delivering accessible, paramedic-led support in home and
+            care settings. The aim is to introduce structured clinical services
+            that provide reassurance, continuity, and improved communication
+            around patient care.
           </p>
 
           <p
@@ -59,8 +60,9 @@ function ClinicalServicesIntro() {
               marginTop: "0.75rem",
             }}
           >
-            These services are not yet available and will be introduced in line
-            with the appropriate regulatory requirements.
+            All future services will be introduced in line with appropriate
+            regulatory requirements, including registration with the Care
+            Quality Commission (CQC) where required.
           </p>
         </div>
       </div>

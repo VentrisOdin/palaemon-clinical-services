@@ -7,16 +7,23 @@ function ClinicalServicesHero() {
         <div className="glass-card pricing-hero-card">
           <div className="pricing-hero-grid">
             <div>
-              <p className="home-eyebrow">Future Services</p>
+              <p className="home-eyebrow">Future services</p>
 
               <h1 className="pricing-hero-title">
-                A growing range of home-based services planned for the future
+                Developing future clinical support for people at home and in care settings
               </h1>
 
               <p className="home-copy pricing-hero-copy">
-                Palaemon is being developed to expand beyond ear care, with
-                additional services planned for the future as the business grows
-                and the appropriate regulatory processes are completed.
+                Palaemon Clinical Services is being developed beyond ear care, with
+                future paramedic-led services planned to support vulnerable people
+                through structured assessment, reassurance, and clearer communication
+                between care providers and clinicians.
+              </p>
+
+              <p className="home-copy pricing-hero-copy">
+                These services are not yet available and will only be introduced
+                following the appropriate regulatory process, including Care Quality
+                Commission registration where required.
               </p>
             </div>
 
@@ -26,7 +33,7 @@ function ClinicalServicesHero() {
               <div className="glass-card pricing-hero-image-card">
                 <img
                   src={clinicalImage}
-                  alt="Professional equipment for planned future home-based services"
+                  alt="Clinical equipment representing planned future paramedic-led services"
                   className="pricing-hero-image"
                 />
 
