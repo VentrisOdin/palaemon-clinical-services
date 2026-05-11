@@ -65,7 +65,7 @@ function Navbar() {
               }`}
               onClick={closeMenu}
             >
-              Future Services
+              Carehome Services
             </Link>
 
             <Link

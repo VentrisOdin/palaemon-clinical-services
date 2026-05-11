@@ -19,6 +19,7 @@ import TermsPage from "./pages/TermsPage";
 import CancellationPage from "./pages/CancellationPage";
 import ComplaintsPage from "./pages/ComplaintsPage";
 import InsurancePage from "./pages/InsurancePage";
+import CareHomeClinics from "./pages/CareHomeClinics";
 
 import ServiceArea from "./pages/ServiceArea";
 import ServiceAreaHampshire from "./pages/ServiceAreaHampshire";
@@ -68,7 +69,8 @@ function AppRoutes() {
         <Route path="/service-area-surrey" element={<ServiceAreaSurrey />} />
         <Route path="/ear-wax-removal-portsmouth" element={<EarWaxRemovalPortsmouth />} />
         <Route path="/ear-wax-removal-guildford" element={<EarWaxRemovalGuildford />} />
-        <Route path="/ear-wax-removal-petersfield" element={<EarWaxRemovalPetersfield />} />
+        <Route path="/ear-wax-removal-petersfield" element={<EarWaxRemovalPetersfield />} /> 
+        <Route path="/care-home-clinics" element={<CareHomeClinics />} />
       </Routes>
     </MainLayout>
   );
