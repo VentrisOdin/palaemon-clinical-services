@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import EarCare from "./pages/EarCare";
 import ClinicalServices from "./pages/Clinical-Services";
 import BookingPage from "./pages/BookingPage";
+import BookingConfirmed from "./pages/BookingConfirmed";
 import Microsuction from "./pages/Microsuction";
 import PricingPage from "./pages/PricingPage";
 import FAQPage from "./pages/FAQPage";
@@ -30,12 +31,16 @@ import QrLandingPage from "./pages/QrLandingPage/QrLandingPage";
 
 function AppRoutes() {
   const location = useLocation();
-  const isQrPage = location.pathname === "/book-now";
 
-  if (isQrPage) {
+  const isStandalonePage =
+    location.pathname === "/book-now" ||
+    location.pathname === "/booking-confirmed";
+
+  if (isStandalonePage) {
     return (
       <Routes>
         <Route path="/book-now" element={<QrLandingPage />} />
+        <Route path="/booking-confirmed" element={<BookingConfirmed />} />
       </Routes>
     );
   }
