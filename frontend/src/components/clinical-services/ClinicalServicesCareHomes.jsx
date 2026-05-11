@@ -29,12 +29,7 @@ function ClinicalServicesCareHomes() {
             appropriate registration with the Care Quality Commission (CQC).
           </p>
 
-          <Link
-            to="/future-services"
-            className="home-link clinical-highlight-link"
-          >
-            Learn more about future services
-          </Link>
+          
 
         </div>
       </div>
