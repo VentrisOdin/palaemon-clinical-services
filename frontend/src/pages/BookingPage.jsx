@@ -40,9 +40,9 @@ function BookingPage() {
               marginBottom: "1.25rem",
             }}
           >
-            Choose your preferred appointment time, then pay the booking deposit.
-            After payment, you will be redirected to complete the booking form.
-            All booking requests are reviewed before confirmation.
+            Choose your preferred appointment time, then pay the £20 booking
+            deposit to secure your request. The remaining balance is paid at the
+            appointment. All booking requests are reviewed before confirmation.
           </p>
 
           <div className="glass-card booking-image-card">
@@ -55,10 +55,10 @@ function BookingPage() {
 
           <div className="home-pill-row" style={{ marginBottom: "2rem" }}>
             {[
+              "Introductory offer: £50 both ears",
               "Home visits",
-              "Microsuction ear wax removal",
+              "HCPC-registered paramedic",
               "£20 deposit to secure booking",
-              "Simple booking process",
             ].map((item) => (
               <span key={item} className="home-pill">
                 {item}
@@ -67,74 +67,79 @@ function BookingPage() {
           </div>
 
           <div
-            className="home-card-grid"
+            className="nhs-info-card"
             style={{
+              background: "linear-gradient(135deg, #005eb8, #0072ce)",
+              color: "#ffffff",
+              padding: "2.25rem",
+              borderRadius: "28px",
+              textAlign: "center",
               marginBottom: "1.5rem",
+              boxShadow: "var(--shadow-soft)",
             }}
           >
-            <div
-              className="glass-card home-info-card nhs-tile"
+            <p
               style={{
-                padding: "1.6rem",
+                fontSize: "0.82rem",
+                fontWeight: "700",
+                letterSpacing: "0.08em",
+                textTransform: "uppercase",
+                opacity: "0.9",
+                marginBottom: "0.85rem",
               }}
             >
-              <h2
-                style={{
-                  fontSize: "1.1rem",
-                  margin: "0 0 0.75rem 0",
-                }}
-              >
-                Assessment / Both Ears
-              </h2>
+              Introductory Launch Offer
+            </p>
 
-              <div
-                style={{
-                  fontSize: "2rem",
-                  fontWeight: "700",
-                  color: "#ffffff",
-                  marginBottom: "0.85rem",
-                }}
-              >
-                £80
-              </div>
-
-              <p className="home-card-copy">
-                Includes a home visit with full ear assessment and microsuction treatment for both ears if requiered.
-                
-              </p>
-            </div>
-
-            <div
-              className="glass-card home-info-card nhs-tile"
+            <h2
               style={{
-                padding: "1.6rem",
+                color: "#ffffff",
+                fontSize: "clamp(2rem, 5vw, 2.8rem)",
+                lineHeight: "1.1",
+                margin: "0 0 1rem 0",
               }}
             >
-              <h2
-                style={{
-                  fontSize: "1.1rem",
-                  margin: "0 0 0.75rem 0",
-                }}
-              >
-                Assessment / Single Ear
-              </h2>
+              £50 Both Ears
+            </h2>
 
-              <div
-                style={{
-                  fontSize: "2rem",
-                  fontWeight: "700",
-                  color: "#ffffff",
-                  marginBottom: "0.85rem",
-                }}
-              >
-                £50
-              </div>
+            <p
+              style={{
+                maxWidth: "720px",
+                margin: "0 auto 1.5rem auto",
+                color: "rgba(255,255,255,0.95)",
+                lineHeight: "1.7",
+                fontSize: "1.02rem",
+              }}
+            >
+              Home visit ear wax removal using microsuction, delivered by an
+              HCPC-registered paramedic in the comfort of your own home.
+            </p>
 
-              <p className="home-card-copy">
-                Includes a home visit with full ear assessment and microsuction treatment for one
-                ear if required.
-              </p>
+            <div
+              style={{
+                display: "flex",
+                flexWrap: "wrap",
+                justifyContent: "center",
+                gap: "0.85rem",
+                fontWeight: "600",
+                fontSize: "0.95rem",
+              }}
+            >
+              <span>✔ Home visit included</span>
+              <span>✔ Full ear assessment</span>
+              <span>✔ Evening & weekend appointments</span>
             </div>
+
+            <p
+              style={{
+                marginTop: "1.35rem",
+                fontSize: "0.9rem",
+                color: "rgba(255,255,255,0.9)",
+              }}
+            >
+              Standard price normally £80 for both ears. Honest Google reviews
+              are always appreciated following appointments.
+            </p>
           </div>
 
           <div
@@ -315,8 +320,8 @@ function BookingPage() {
               }}
             >
               Once you have chosen your appointment time, please pay your £20
-              booking deposit. After payment, you will be redirected to the
-              booking and consent form to complete your request.
+              booking deposit. This secures your booking request and is deducted
+              from the final appointment cost.
             </p>
 
             <a

@@ -1,11 +1,11 @@
 import PricingHero from "../components/pricing/PricingHero";
-import PricingCards from "../components/pricing/PricingCards";
+import PricingLaunchOffer from "../components/pricing/PricingLaunchOffer";
 
 function PricingPage() {
   return (
     <>
       <PricingHero />
-      <PricingCards />
+      <PricingLaunchOffer />
     </>
   );
 }

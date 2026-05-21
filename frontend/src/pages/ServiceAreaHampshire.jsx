@@ -10,7 +10,7 @@ function ServiceArea() {
     "Fareham",
     "Gosport",
     "Emsworth",
-    "Hayling Island",
+    "Basingstoke",
     "Horndean",
   ];
 
