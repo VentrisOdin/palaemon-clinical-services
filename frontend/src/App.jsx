@@ -29,6 +29,7 @@ import EarWaxRemovalGuildford from "./pages/EarWaxRemovalGuildford";
 import EarWaxRemovalPetersfield from "./pages/EarWaxRemovalPetersfield";
 import ClinicianPortal from "./pages/ClinicianPortal";
 import QrLandingPage from "./pages/QrLandingPage/QrLandingPage";
+import DemoPortal from "./pages/DemoPortal";
 
 
 function AppRoutes() {
@@ -74,6 +75,7 @@ function AppRoutes() {
         <Route path="/ear-wax-removal-petersfield" element={<EarWaxRemovalPetersfield />} /> 
         <Route path="/care-home-clinics" element={<CareHomeClinics />} />
         <Route path="/clinician" element={<ClinicianPortal />} />
+        <Route path="/demo" element={<DemoPortal />} />
       </Routes>
     </MainLayout>
   );

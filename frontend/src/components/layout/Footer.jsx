@@ -56,6 +56,7 @@ function Footer() {
         <Link to="/insurance">Insurance</Link>
         <Link to="/service-area">Service Area</Link>
         <Link to="/clinician">Clinician Portal</Link>
+        <Link to="/demo">Demo Portal</Link>
       </div>
 
       {/* Copyright */}
