@@ -13,22 +13,12 @@ function Footer() {
     >
       {/* Brand */}
       <div style={{ marginBottom: "0.5rem", fontWeight: "700" }}>
-        Palaemon Ear Care
+        Palaemon Clinical Services
       </div>
 
+      {/* Main Links */}
       <div
-        style={{
-          fontSize: "0.8rem",
-          color: "rgba(0,0,0,0.6)",
-          marginBottom: "1rem",
-        }}
-      >
-        A trading name of Palaemon Clinical Services
-      </div>
-
-      {/* Links */}
-      <div
-        className="footer-links-primary"   // 👈 added
+        className="footer-links-primary"
         style={{
           display: "flex",
           flexWrap: "wrap",
@@ -46,9 +36,9 @@ function Footer() {
         <Link to="/future-services">Future Services</Link>
       </div>
 
-      {/* Legal Links */}
+      {/* Secondary / Legal Links */}
       <div
-        className="footer-links-secondary" // 👈 added
+        className="footer-links-secondary"
         style={{
           marginTop: "1rem",
           display: "flex",
@@ -65,6 +55,7 @@ function Footer() {
         <Link to="/complaints">Complaints</Link>
         <Link to="/insurance">Insurance</Link>
         <Link to="/service-area">Service Area</Link>
+        <Link to="/clinician">Clinician Portal</Link>
       </div>
 
       {/* Copyright */}

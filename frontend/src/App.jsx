@@ -27,8 +27,9 @@ import ServiceAreaSurrey from "./pages/ServiceAreaSurrey";
 import EarWaxRemovalPortsmouth from "./pages/EarWaxRemovalPortsmouth";
 import EarWaxRemovalGuildford from "./pages/EarWaxRemovalGuildford";
 import EarWaxRemovalPetersfield from "./pages/EarWaxRemovalPetersfield";
-
+import ClinicianPortal from "./pages/ClinicianPortal";
 import QrLandingPage from "./pages/QrLandingPage/QrLandingPage";
+
 
 function AppRoutes() {
   const location = useLocation();
@@ -42,6 +43,7 @@ function AppRoutes() {
       <Routes>
         <Route path="/book-now" element={<QrLandingPage />} />
         <Route path="/booking-confirmed" element={<BookingConfirmed />} />
+       
       </Routes>
     );
   }
@@ -71,6 +73,7 @@ function AppRoutes() {
         <Route path="/ear-wax-removal-guildford" element={<EarWaxRemovalGuildford />} />
         <Route path="/ear-wax-removal-petersfield" element={<EarWaxRemovalPetersfield />} /> 
         <Route path="/care-home-clinics" element={<CareHomeClinics />} />
+        <Route path="/clinician" element={<ClinicianPortal />} />
       </Routes>
     </MainLayout>
   );
