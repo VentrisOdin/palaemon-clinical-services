@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function ClinicalServicesModel() {
   const points = [
     {
@@ -42,12 +44,7 @@ function ClinicalServicesModel() {
             The approach
           </p>
 
-          <h2
-            style={{
-              color: "#ffffff",
-              marginBottom: "1rem",
-            }}
-          >
+          <h2 style={{ color: "#ffffff", marginBottom: "1rem" }}>
             Structured clinical support for care settings
           </h2>
 
@@ -103,6 +100,67 @@ function ClinicalServicesModel() {
                 </p>
               </div>
             ))}
+          </div>
+
+          <div
+            style={{
+              marginTop: "2rem",
+              padding: "1.5rem",
+              borderRadius: "22px",
+              background: "rgba(255,255,255,0.16)",
+              border: "1px solid rgba(255,255,255,0.24)",
+            }}
+          >
+            <p
+              style={{
+                fontSize: "0.78rem",
+                fontWeight: "800",
+                letterSpacing: "0.08em",
+                textTransform: "uppercase",
+                color: "rgba(255,255,255,0.88)",
+                marginBottom: "0.75rem",
+              }}
+            >
+              Demonstration system
+            </p>
+
+            <h3
+              style={{
+                color: "#ffffff",
+                fontSize: "1.35rem",
+                marginBottom: "0.75rem",
+              }}
+            >
+              See the developing model in action
+            </h3>
+
+            <p
+              style={{
+                color: "rgba(255,255,255,0.92)",
+                lineHeight: "1.7",
+                maxWidth: "760px",
+                marginBottom: "1.25rem",
+              }}
+            >
+              Explore a read-only demonstration showing a sample resident
+              journey, assessment records, structured referral, care home
+              summary and GP-facing PDF output.
+            </p>
+
+            <Link
+              to="/demo"
+              className="qr-book-button"
+              style={{
+                width: "auto",
+                minWidth: "260px",
+                textAlign: "center",
+                background: "#ffffff",
+                color: "#005eb8",
+                boxShadow: "0 14px 32px rgba(0,0,0,0.12)",
+              }}
+            >
+              View Demonstration System
+            </Link>
           </div>
         </div>
       </div>

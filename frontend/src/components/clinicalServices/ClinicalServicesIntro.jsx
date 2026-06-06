@@ -21,7 +21,7 @@ function ClinicalServicesIntro() {
               marginBottom: "0.9rem",
             }}
           >
-            About Future Services
+            Future Service Development
           </p>
 
           <h2
@@ -33,7 +33,7 @@ function ClinicalServicesIntro() {
               maxWidth: "680px",
             }}
           >
-            Developing paramedic-led clinical support in the community
+            Developing a paramedic-led care home monitoring service
           </h2>
 
           <p
@@ -44,11 +44,11 @@ function ClinicalServicesIntro() {
               maxWidth: "720px",
             }}
           >
-            Palaemon Clinical Services is being developed beyond ear care, with
-            a focus on delivering accessible, paramedic-led support in home and
-            care settings. The aim is to introduce structured clinical services
-            that provide reassurance, continuity, and improved communication
-            around patient care.
+            Palaemon Clinical Services is currently developing a structured
+            care home monitoring model designed to support earlier recognition
+            of deterioration, proactive resident review, and improved
+            communication between care homes, primary care and community
+            services.
           </p>
 
           <p
@@ -60,10 +60,39 @@ function ClinicalServicesIntro() {
               marginTop: "0.75rem",
             }}
           >
-            All future services will be introduced in line with appropriate
-            regulatory requirements, including registration with the Care
-            Quality Commission (CQC) where required.
+            The proposed model uses paramedic-led baseline assessments,
+            routine clinical monitoring, structured escalation pathways and
+            professional clinical summaries to provide an additional layer of
+            support for residents and care home staff.
           </p>
+
+          <p
+            style={{
+              fontSize: "1rem",
+              lineHeight: "1.7",
+              color: "var(--color-text-secondary)",
+              maxWidth: "720px",
+              marginTop: "0.75rem",
+            }}
+          >
+            This service is currently under development and is not yet
+            available clinically. Development is being undertaken alongside
+            appropriate governance, regulatory preparation and future Care
+            Quality Commission (CQC) registration requirements.
+          </p>
+
+          <div
+            style={{
+              marginTop: "2rem",
+            }}
+          >
+            <Link
+              to="/demo"
+              className="primary-button"
+            >
+              View Demonstration System
+            </Link>
+          </div>
         </div>
       </div>
     </section>

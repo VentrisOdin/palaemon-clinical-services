@@ -65,7 +65,7 @@ function Navbar() {
               }`}
               onClick={closeMenu}
             >
-              Carehome Services
+              Clinical Services
             </Link>
 
             <Link
