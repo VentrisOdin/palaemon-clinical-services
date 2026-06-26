@@ -328,7 +328,7 @@ function BookingPage() {
               href="https://buy.stripe.com/28EfZh9ro06Mg9V8ff1ZS00"
               className="home-primary-button"
             >
-              Pay £20 Deposit
+              Secure Booking
             </a>
           </div>
 
